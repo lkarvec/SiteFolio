@@ -1,10 +1,11 @@
-@import "../../styles/variables/colors.scss";
+@import '../../styles/variables/colors.scss';
 
 .card {
-  box-shadow: -3px 4px 6px #00000020;
-  border: 1px solid $borderColor;
-  border-radius: 5px;
-  align-items: center;
+    box-shadow: -3px 4px 6px #00000020;
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+    align-items: center;
+    opacity: 90%;
 }
 
 .card:hover {
@@ -12,7 +13,7 @@
 }
 
 .cardHeader {
-  background-color: inherit;
+    background-color: inherit;
 }
 
 .cardBody {
@@ -21,20 +22,20 @@
 }
 
 .selected {
-  border: 2px solid $selectedBorder !important;
+    border: 2px solid $selectedBorder !important;
 }
 
 .large {
-  width: 500px;
-  height: 700px;
+    width: 900px;
+    height: 900px;
 }
 
 .medium {
-  width: 500px;
-  height: 500px;
+    width: 500px;
+    height: 500px;
 }
 
 .small {
-  width: 500px;
-  height: 300px;
+    width: 500px;
+    height: 300px;
 }
