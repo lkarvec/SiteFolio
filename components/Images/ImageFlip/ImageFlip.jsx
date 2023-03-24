@@ -45,14 +45,15 @@ const ImageFlip = (props) => {
         config: { mass: 5, tension: 500, friction: 80 },
     });
     return (
-        <div className={classes.container} onClick={() => set((state) => !state)}>
-            <animated.div className={backStyle} style={{ opacity: opacity.to((o) => 1 - o), transform }} />
+        <div className={classes.container} onClick={() => set((flippedState) => !flippedState)}>
+            <animated.div className={backStyle} style={{ opacity: opacity.to((o) => 1 - o), transform, rotateY: '-10deg' }} />
             <animated.div
                 className={frontStyle}
                 style={{
                     opacity,
                     transform,
-                    rotateX: '0deg',
+                    rotateX: '180deg',
+                    rotateY: '10deg',
                 }}
             />
         </div>
@@ -63,7 +64,7 @@ ImageFlip.defaultProps = {};
 
 ImageFlip.propTypes = {
     backPic: PropTypes.string,
-    frontPic: PropTypes.bool,
+    frontPic: PropTypes.string,
     selected: PropTypes.bool,
     size: PropTypes.oneOf(['small', 'medium', 'large']),
 };

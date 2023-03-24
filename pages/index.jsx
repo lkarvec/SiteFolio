@@ -15,9 +15,8 @@ function App() {
 
     return (
         <div style={style}>
-            <Container>
-                <MainContent />
-            </Container>
+            <MainContent />
+
             <Button
                 label="Regenerate colors"
                 handleClick={() => {

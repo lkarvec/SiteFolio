@@ -1,11 +1,25 @@
+@import '../../../styles/variables/colors.scss';
+
 .c {
     position: absolute;
-    max-width: 500px;
+    max-width: 600px;
     max-height: 500px;
     width: 350px;
     height: 200px;
     cursor: pointer;
+    border: 1px solid $borderColor;
     will-change: transform, opacity;
+    box-shadow: -7px 7px 6px #00000040;
+
+    &:hover {
+        translate: y -10px;
+        transition: var(--transition);
+    }
+}
+
+.c:hover {
+    translate: y -10px;
+    transition: var(--transition);
 }
 
 .front,
@@ -17,5 +31,11 @@
     display: flex;
     align-items: center;
     height: 200px;
+    width: 350px;
     justify-content: center;
+
+    &:hover {
+        translate: y -10px;
+        transition: var(--transition);
+    }
 }
