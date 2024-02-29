@@ -22,18 +22,19 @@ const RADx = () => {
                         <h4>March 2023 - March 2024</h4>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="mb-3">
                     <Col lg={8}>
                         <p>
-                            Moving from Fedmall to the RADx Data Hub&apos;s 3.0 modernization efforts, I was tasked to quickly set up and
-                            deploy the scaffolding for the new website repository. Being familiar with it&apos;s ease of use in
-                            maintainability, I chose Next.js for the framework and got to work.
+                            Moving away from Fedmall, <a href="https://www.boozallen.com/">Booz Allen Hamilton</a> quickly picked me up to
+                            work on their RADx Data Hub&apos;s 3.0 modernization efforts to lead the frontend team, and I was tasked to
+                            quickly set up and deploy the scaffolding for the new website repository. Being familiar with it&apos;s ease of
+                            use in maintainability, I chose Next.js for the framework and got to work.
                         </p>{' '}
                         <p>
                             I worked very closely with the Tech Lead <a href="https://www.linkedin.com/in/nileshjmistry/">Nilesh Mistry</a>{' '}
                             and the Business Analyst <a href="https://www.linkedin.com/in/samuel-waddell3/">Samuel Waddell</a> to gather and
                             confirm requirements, manage the full-stack team, and work with our partners: Renaissance Computing Institute at
-                            UNC (<a href="https://renci.org/">RENCI</a>) and <a href="https://www.stanford.edu/">Stanford University</a> to
+                            UNC (<a href="https://renci.org/">RENCI</a>) and <a href="https://www.stanford.edu/">Stanford University</a>; to
                             commmunicate designs and functionality of the website.
                         </p>
                         <h4>Experience</h4>
@@ -62,10 +63,10 @@ const RADx = () => {
                     </Col>
                     <Col>
                         <Row className="mt-5 mb-5">
-                            <ImageFlip backPic={links.Fed1} frontPic={links.Fed2} />
+                            <ImageFlip backPic={links.RADxHome} frontPic={links.RADxHelpfulInfo} />
                         </Row>
                         <Row className="mt-4">
-                            <ImageFlip backPic={links.Fed3} frontPic={links.Fed4} />
+                            <ImageFlip backPic={links.RADxStudyExplorer} frontPic={links.Fed4} />
                         </Row>
                     </Col>
                 </Row>
