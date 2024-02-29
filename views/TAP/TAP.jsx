@@ -1,29 +1,49 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import PropTypes from 'prop-types';
-import Card from '../../components/Card/Card';
-import ImageFlip from '../../components/Images/ImageFlip/ImageFlip';
-import links from '../../constants/imageUrls.module.scss';
 import classes from './TAP.module.scss';
 
 /*
  */
 
-const TAP = (props) => {
+const TAP = () => {
     return (
         <>
             <Container className={classes.Container}>
-                <Row>
-                    <li></li>
+                <Row className="mt-4 mb-4">
+                    <Col lg={1}>
+                        <img src={'./TAPLogo.png'} className={classes.tapLogo} />
+                    </Col>
+                    <Col lg={{ span: 5 }}>
+                        <h2>Tiffin Airsoft and Paintball</h2>
+                        <h3>Software Developer / Co-founder</h3>
+                        <h4>January 2015 - July 2017</h4>
+                    </Col>
                 </Row>
+            </Container>
+            <Container>
                 <Row>
-                    <ImageFlip backPic={links.book1} frontPic={links.book2} />
+                    <Col>
+                        <p>
+                            A close friend and I founded a business together in Tiffin, Ohio to hopefully get kids more active and off the
+                            streets during the height of the Opioid crisis in Ohio. We ran this business for about a year and a half, and
+                            still maintain the community page for Airsoft and Paintball meet-ups all across Northwest Ohio today.
+                        </p>
+
+                        <h4>Experience (Software Engineering related)</h4>
+                        <li>
+                            Designed and created a Full-Stack Python Retail PoS product with Microsoft Access, SQL Server for relational
+                            database administration with features like Inventory Management, Checkout, Tax Report Management, and a Loyalty
+                            System.
+                        </li>
+                        <li>
+                            Maintained and sold the point-of-service solution to other businesses in the area as a cheaper alternative to
+                            help the business secure $15,000 (DBA Feytouched Tech) in additional funding in its start-up phase.
+                        </li>
+                    </Col>
                 </Row>
             </Container>
         </>
     );
 };
-
-TAP.propTypes = {};
 
 export default TAP;
