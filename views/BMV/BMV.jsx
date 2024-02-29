@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import PropTypes from 'prop-types';
 import ImageFlip from '../../components/Images/ImageFlip/ImageFlip';
 import links from '../../constants/imageUrls.module.scss';
 import classes from './BMV.module.scss';
@@ -8,7 +7,7 @@ import classes from './BMV.module.scss';
 /*
  */
 
-const BMV = (props) => {
+const BMV = () => {
     return (
         <>
             <Container className={classes.Container}>
@@ -24,12 +23,24 @@ const BMV = (props) => {
                 </Row>
                 <Row>
                     <Col lg={8}>
+                        <p>
+                            During my last semester at UTSA, I worked with Belinda Medellin to enhance her Teacher Mentoring website with a
+                            BetterHelp-like inspired questionnaire to on-board new customers to her platform, as well as a complete website
+                            redesign to complete the preferred customer experience.
+                        </p>
+                        <h4>Experience</h4>
                         <li>
-                            Managed a team of 5 other programmers and released a Teacher Mentoring Site with JavaScript, React, Jest, and
-                            Node.js.
+                            Contracted to manage a team of 5 other programmers and released a Teacher Mentoring web application with
+                            JavaScript, React, Jest, and Node.js.
                         </li>
-                        <li>Built a SQL database and data-driven questionnaire to match users to mentors for an effortless experience. </li>
-                        <li>Created user testing studies and UI/UX design research, and adjusted the website based on user feedback.</li>
+                        <li>
+                            Created high and low fidelity wireframes in Figma to pinpoint and refine design painpoints from stakeholders.
+                        </li>
+                        <li>Built a SQL database and data-driven questionnaire to match users to mentors for an effortless experience.</li>
+                        <li>
+                            Conducted User Interface testing and UX research, and adjusted the website based on user and stakeholder
+                            feedback.
+                        </li>
                     </Col>
                     <Col className="mb-4">
                         <ImageFlip backPic={links.BMV1} frontPic={links.BMV2} />
@@ -39,7 +50,5 @@ const BMV = (props) => {
         </>
     );
 };
-
-BMV.propTypes = {};
 
 export default BMV;
