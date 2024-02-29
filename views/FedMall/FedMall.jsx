@@ -17,11 +17,11 @@ const FedMall = () => {
                     </Col>
                     <Col lg={{ span: 5 }}>
                         <h2>Defense Logistics Agency</h2>
-                        <h3>Senior/Lead Software Developer</h3>
+                        <h3>Senior/Lead Software Engineer</h3>
                         <h4>December 2021 - January 2023</h4>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="mb-3">
                     <Col lg={8}>
                         <p>
                             My time working on the{' '}
@@ -29,12 +29,42 @@ const FedMall = () => {
                                 target="_blank"
                                 rel="noreferrer"
                                 href="https://www.restricted.fedmall.mil/webapp/wcs/stores/servlet/en/fedmall"
-                            ></a>
-                            Fedmall contract for both Credence Management Solutions and Partnet Inc. was a fantastic opportunity to step
-                            into more enterprise software. My main efforts were to modernize this older site away from it&apos;s JSP heavy
-                            architecture into a React and Next.js environment.
+                            >
+                                Fedmall
+                            </a>{' '}
+                            contract for both{' '}
+                            <a target="_blank" rel="noreferrer" href="https://credence-llc.com/">
+                                Credence Management Solutions
+                            </a>{' '}
+                            and{' '}
+                            <a target="_blank" rel="noreferrer" href="https://partnet.com/">
+                                Partnet Inc.
+                            </a>{' '}
+                            was a fantastic opportunity to step into more scalable enterprise software. My main efforts were to modernize
+                            this older site away from it&apos;s JSP heavy architecture into a React and Next.js environment.
                         </p>
-                        <h4>Accomplishments</h4>
+                        <p>
+                            I quickly advanced to a Lead position, taking over for my previous Lead,{' '}
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mmiller1102/">
+                                Michael Miller
+                            </a>
+                            , as the Lead Software Engineer during the MOES (Material Order Entry System), and my leadership and foresight
+                            enabled MOES to be the first project on the contract releasing early without overtime, instead of every other
+                            project being late by several months.
+                        </p>
+                        <p>
+                            I continued being the Lead Software Engineer through the Partnet transition, working very closely with our
+                            Business Analyst{' '}
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/joe-bonilla-b3128765/">
+                                Joe Bonilla
+                            </a>{' '}
+                            and our clients at the Defense Logistics Agency to generate and confirm requirements and software architecture,
+                            as well as manage the smooth environment transition during active development during October 2022 with{' '}
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ryan-robinette-33758a53/">
+                                Ryan Robinette.
+                            </a>
+                        </p>
+                        <h4>Experience</h4>
                         <li>
                             Modernized the account section of FedMall Commerce for DLA using JavaScript, ReactJS, Redux, Bootstrap, AXIOS,
                             webpack, NextJS and NodeJS, with Java and Python 3 REST and AWS services, and a GraphQL layer to reduce calls by
@@ -69,7 +99,7 @@ const FedMall = () => {
                         </li>
                     </Col>
                     <Col>
-                        <Row className="mt-5 mb-5">
+                        <Row className="mb-5">
                             <ImageFlip backPic={links.Fed1} frontPic={links.Fed2} />
                         </Row>
                         <Row className="mt-4">
