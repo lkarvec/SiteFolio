@@ -1,6 +1,5 @@
 import React from 'react';
-import { Col, Container, Image, Row } from 'react-bootstrap';
-import PropTypes from 'prop-types';
+import { Col, Container, Row } from 'react-bootstrap';
 import ImageFlip from '../../components/Images/ImageFlip/ImageFlip';
 import links from '../../constants/imageUrls.module.scss';
 import classes from './FedMall.module.scss';
@@ -8,7 +7,7 @@ import classes from './FedMall.module.scss';
 /*
  */
 
-const FedMall = (props) => {
+const FedMall = () => {
     return (
         <>
             <Container className={classes.Container}>
@@ -18,29 +17,31 @@ const FedMall = (props) => {
                     </Col>
                     <Col lg={{ span: 5 }}>
                         <h2>Defense Logistics Agency</h2>
-                        <h3>Senior Software Developer</h3>
+                        <h3>Senior/Lead Software Developer</h3>
                         <h4>December 2021 - January 2023</h4>
                     </Col>
                 </Row>
                 <Row>
                     <Col lg={8}>
+                        <p>
+                            My time working on the Fedmall contract for both Credence Management Solutions and Partnet Inc. was a fantastic
+                            opportunity to step into more enterprise software. My main efforts were to modernize this older site away from
+                            it&apos;s JSP heavy architecture into a React and Next.js environment.
+                        </p>
+                        <h4>Accomplishments</h4>
                         <li>
-                            Modernized the account section of FedMall Commerce, including Profile, Registration, Payments, and Permissions
-                            sections for the Defense Logistics Agency using JavaScript, ReactJS, Bootstrap, AXIOS, NextJS and NodeJS, with
-                            Java and Python 3 REST and AWS services, and a GraphQL composition layer to speed up page load times by 70%.
+                            Modernized the account section of FedMall Commerce for DLA using JavaScript, ReactJS, Redux, Bootstrap, AXIOS,
+                            webpack, NextJS and NodeJS, with Java and Python 3 REST and AWS services, and a GraphQL layer to reduce calls by
+                            ~95% of their previous size.
                         </li>
                         <li>
-                            Other projects contributed to include Supplier Portal and MDM(FEDS) teams with enhancement and sustainment
-                            tickets and the MOES Bulk Upload and DAAS service rewrite to make those services asynchronous.
+                            Created the in-house React component library with Storybook to enforce consistency across FedMall modernization
+                            projects and to automate WCAG 2.1 compliance on a Component level.
                         </li>
+                        <li>Reduced P99 latency for Orders pages from 22 seconds to 1 second with GraphQL data composition.</li>
                         <li>
-                            Created AWS lambda pipelines with SQS triggers, S3 buckets, dead letter queues and using an Aurora DB schema for
-                            data management for asynchronous headless Python services on large scale Milstrip Order uploading with DAAS.
-                        </li>
-                        <li>
-                            Supported 2 teams with Agile Project Planning utilizing Scrum methodology, Performance Metrics, Standard
-                            Operational Procedure changes, split between the Commerce team and the MOES team, in addition to development
-                            work.
+                            Created Bulk Upload APIs with asynchronous Python and Java AWS Lambda services, SQS and S3 on big data uploading
+                            using an Aurora DB schema for data management.
                         </li>
                         <li>Directly coordinated with the DLA to demo work successfully at the end of every sprint.</li>
                         <li>
@@ -52,17 +53,13 @@ const FedMall = (props) => {
                             with the proper team members to solve them in a timely manner to ensure blockers were resolved quickly.
                         </li>
                         <li>
-                            Oversaw Test-Driven Development and deployment security and quality with Jest, Selenium, and SonarQube gates,
-                            saving QA 5-7 days every sprint so ARIA testing can be completed, a previously neglected disability compliance.
-                        </li>
-
-                        <li>
-                            Developed the in-house React and Bootstrap component library with Storybook to enforce consistency across the
-                            other FedMall modernization projects and allow for front end testing and development of new components and
-                            factories.
+                            Implemented Test-Driven Development practices with Jest and Selenium for test automation, and SonarQube for
+                            deployment code quality and security gates, saving QA several days of manual testing every sprint and creating a
+                            more maintainable product.
                         </li>
                         <li>
-                            Led the efforts of 508 Compliance for disabled users by creating new QA policies used by DLA in User Testing.
+                            Led the efforts of 508 Compliance for disabled users by creating new QA policies used by DLA in User Testing and
+                            performing audits for Credence.
                         </li>
                     </Col>
                     <Col>
@@ -78,7 +75,5 @@ const FedMall = (props) => {
         </>
     );
 };
-
-FedMall.propTypes = {};
 
 export default FedMall;
