@@ -1,6 +1,8 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import classes from './TAP.module.scss';
+import links from '../../constants/imageUrls.module.scss';
+import ImageFlip from '../../components/Images/ImageFlip/ImageFlip';
 
 /*
  */
@@ -22,7 +24,7 @@ const TAP = () => {
             </Container>
             <Container>
                 <Row>
-                    <Col>
+                    <Col lg={8}>
                         <p>
                             A close friend and I founded a business together in Tiffin, Ohio to hopefully get kids more active and off the
                             streets during the height of the Opioid crisis in Ohio. We ran this business for about a year and a half, and
@@ -39,6 +41,11 @@ const TAP = () => {
                             Maintained and sold the point-of-service solution to other businesses in the area as a cheaper alternative to
                             help the business secure $15,000 (DBA Feytouched Tech) in additional funding in its start-up phase.
                         </li>
+                    </Col>
+                    <Col>
+                        <Row className="mb-5">
+                            <ImageFlip backPic={links.Tap1} frontPic={links.Tap2} />
+                        </Row>
                     </Col>
                 </Row>
             </Container>
