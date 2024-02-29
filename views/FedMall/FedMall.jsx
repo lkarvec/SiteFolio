@@ -24,9 +24,15 @@ const FedMall = () => {
                 <Row>
                     <Col lg={8}>
                         <p>
-                            My time working on the Fedmall contract for both Credence Management Solutions and Partnet Inc. was a fantastic
-                            opportunity to step into more enterprise software. My main efforts were to modernize this older site away from
-                            it&apos;s JSP heavy architecture into a React and Next.js environment.
+                            My time working on the{' '}
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://www.restricted.fedmall.mil/webapp/wcs/stores/servlet/en/fedmall"
+                            ></a>
+                            Fedmall contract for both Credence Management Solutions and Partnet Inc. was a fantastic opportunity to step
+                            into more enterprise software. My main efforts were to modernize this older site away from it&apos;s JSP heavy
+                            architecture into a React and Next.js environment.
                         </p>
                         <h4>Accomplishments</h4>
                         <li>

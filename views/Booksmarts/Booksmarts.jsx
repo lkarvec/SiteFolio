@@ -30,7 +30,11 @@ const Booksmarts = () => {
                             to his community for webdevs that would be interested in working for him on his website. The initial plan was to
                             take the DGG/VGG site design and modernize it with a load of integrated features to connect all three social
                             media communities (Twitch, Youtube, and Discord) into one unified community. I ended up working very closely
-                            with <a href="https://www.linkedin.com/in/tikonelson/">Tiko Nelson</a> for a majority on the project on design
+                            with{' '}
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/tikonelson/">
+                                Tiko Nelson
+                            </a>{' '}
+                            for a majority on the project on design
                         </p>
                         <h4>Experience</h4>
                         <li>

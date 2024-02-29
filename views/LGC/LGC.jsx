@@ -25,16 +25,28 @@ const LGC = () => {
                     <Col lg={8}>
                         <p>
                             For my independent study, I partnered with{' '}
-                            <a href="https://www.linkedin.com/in/henry-newton-3161bab/">Henry Newton</a> and{' '}
-                            <a href="https://www.linkedin.com/in/mark-robinson-0b38975b/">Dr. Mark Robinson</a> at UTSA to create an
-                            Open-Source EMP Calculator website based off of{' '}
-                            <a href="http://large.stanford.edu/courses/2019/ph241/rogers1/docs/ad-a009-208.pdf">
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/henry-newton-3161bab/">
+                                Henry Newton
+                            </a>{' '}
+                            and{' '}
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mark-robinson-0b38975b/">
+                                Dr. Mark Robinson
+                            </a>{' '}
+                            at UTSA to create an Open-Source EMP Calculator website based off of{' '}
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="http://large.stanford.edu/courses/2019/ph241/rogers1/docs/ad-a009-208.pdf"
+                            >
                                 Louis W. Seiler Jr&apos;s 1975 paper detailing a Fortran program
                             </a>{' '}
                             he created for the United States Air Force Institute of Technology. Soon after, I partnered with the Louisiana
                             Grid Coalition to enhance this website further and work with companies like{' '}
-                            <a href="https://www.empshield.com/">EMPShield</a> to get feedback and details for enhancements. I left this
-                            project during my Fedmall contract transition to Partnet Inc..
+                            <a target="_blank" rel="noreferrer" href="https://www.empshield.com/">
+                                EMPShield
+                            </a>{' '}
+                            to get feedback and details for enhancements. I left this project during my Fedmall contract transition to
+                            Partnet Inc..
                         </p>
 
                         <h4>Experience</h4>
