@@ -12,7 +12,7 @@ import BMV from 'views/BMV/BMV';
 
 const ViewHandler = (props) => {
     const { state } = props;
-    console.log(props);
+
     switch (state) {
         case 'Booksmarts':
             return (
@@ -20,7 +20,7 @@ const ViewHandler = (props) => {
                     <Booksmarts />
                 </>
             );
-        case 'FedMall':
+        case 'DLA':
             return (
                 <>
                     <FedMall />
@@ -48,6 +48,12 @@ const ViewHandler = (props) => {
             return (
                 <>
                     <BMV />
+                </>
+            );
+        case 'NIH':
+            return (
+                <>
+                    <NIH />
                 </>
             );
     }

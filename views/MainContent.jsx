@@ -13,7 +13,7 @@ const MainContent = (props) => {
     const [view, setView] = useState('FedMall');
     const NavParams = {
         activeTab: view,
-        tabList: ['FedMall', 'Louisiana Grid Coalition', 'BMyVillage', 'Booksmarts', 'Tiffin Airsoft and Paintball', 'Feytouched Tech'],
+        tabList: ['NIH', 'DLA', 'Louisiana Grid Coalition', 'BMyVillage', 'Booksmarts', 'Tiffin Airsoft and Paintball', 'Feytouched Tech'],
     };
     return (
         <>
