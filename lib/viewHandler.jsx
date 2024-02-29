@@ -6,6 +6,7 @@ import FTT from 'views/FTT/FTT';
 import TAP from 'views/TAP/TAP';
 import LGC from 'views/LGC/LGC';
 import BMV from 'views/BMV/BMV';
+import RADx from '../views/RADx Data Hub/RADx';
 
 /*
  */
@@ -53,7 +54,7 @@ const ViewHandler = (props) => {
         case 'NIH':
             return (
                 <>
-                    <NIH />
+                    <RADx />
                 </>
             );
     }
