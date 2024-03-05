@@ -1,29 +1,53 @@
-import useBackground from '../lib/backgroundGenerator';
+import { generateBackground } from '../lib/backgroundGenerator';
 import MainContent from '../views/MainContent';
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import Button from '../components/Button/Button';
 import classes from '../views/MainContent.module.scss';
 
 function App() {
-    const { backgrounds, regenerate } = useBackground();
-    const style = useMemo(() => {
+    const [backgroundOne, regenerateOne] = useState(generateBackground());
+    const [backgroundTwo, regenerateTwo] = useState(generateBackground());
+    const opacityRef = useRef(true);
+    const [opacity, setOpacity] = useState(true);
+
+    const styleOne = useMemo(() => {
         return {
-            background: backgrounds,
+            background: backgroundOne,
             height: '100%',
+            width: '100%',
+            transition: 'opacity 15s ease',
+            position: 'absolute',
+            opacity: opacity ? 0 : 1,
         };
-    }, [backgrounds]);
+    }, [opacity]);
+
+    const styleTwo = useMemo(() => {
+        return {
+            background: backgroundTwo,
+            height: '100%',
+            width: '100%',
+            transition: 'opacity 15s ease',
+            position: 'absolute',
+            opacity: opacity ? 1 : 0,
+        };
+    }, [opacity]);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            opacityRef.current = !opacityRef.current;
+            setOpacity(opacityRef.current);
+            opacityRef.current ? regenerateTwo(generateBackground()) : regenerateOne(generateBackground());
+        }, 15700);
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
 
     return (
-        <div style={style}>
+        <div className={classes.wrapper}>
+            <div style={styleTwo} />
+            <div style={styleOne} />
             <MainContent />
-
-            <Button
-                label="Regenerate colors"
-                className={classes.regenerate}
-                handleClick={() => {
-                    regenerate();
-                }}
-            />
         </div>
     );
 }

@@ -1,15 +1,26 @@
 .Container {
     justify-content: center;
     padding-top: 45px;
+    position: relative;
+    z-index: 4;
 }
 
 .Card {
     justify-content: center;
     opacity: 80%;
+    overflow: hidden;
+    z-index: 100000;
+    transition: height 1s ease 0.11s;
 }
 
 .regenerate {
     left: 20px;
     bottom: 20px;
     position: fixed;
+}
+
+.wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
 }

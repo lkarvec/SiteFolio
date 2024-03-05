@@ -1,11 +1,10 @@
-@import "~bootstrap/scss/bootstrap";
-@import "fonts";
-@import "variables/colors.scss";
+@import '~bootstrap/scss/bootstrap';
+@import 'fonts';
+@import 'variables/colors.scss';
 
 html,
 body {
     height: 100%;
-    background: $background;
     color: $DarkColor;
     padding: 0;
     margin: 0;
@@ -36,16 +35,19 @@ a:hover {
     font-weight: $bold;
 }
 
-.button-primary, .button-outline-primary {
+.button-primary,
+.button-outline-primary {
     font-size: 16px !important;
 }
 
-.button-primary, .button-primary:hover {
+.button-primary,
+.button-primary:hover {
     background: $PrimaryBackground;
     color: $PrimaryColor;
 }
 
-.button-outline-primary, .button-outline-primary:hover  {
+.button-outline-primary,
+.button-outline-primary:hover {
     background: $SecondaryBackground;
     color: $SecondaryColor;
     border-color: $SecondaryOutlineColor !important;
