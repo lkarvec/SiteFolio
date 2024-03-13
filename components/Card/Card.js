@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card as CardComponent } from 'react-bootstrap';
 import classes from './Card.module.scss';
+import CardAccent from '../Images/svgs/cardAccent';
 
 /**
  * A visual container for other visual React components.
@@ -15,12 +16,7 @@ import classes from './Card.module.scss';
  */
 
 const Card = (props) => {
-    const {
-        title,
-        children,
-        size,
-        selected,
-    } = props;
+    const { title, children, size, selected, accent, accentColor } = props;
 
     let cardClass = classes.card;
     cardClass += selected ? ` ${classes.selected}` : '';
@@ -42,14 +38,13 @@ const Card = (props) => {
 
     return (
         <CardComponent className={cardClass}>
-            {title && (
-                <CardComponent.Header className={classes.cardHeader}>
-                    {title}
-                </CardComponent.Header>
-            ) }
-            <CardComponent.Body className={classes.cardBody}>
-                {children}
-            </CardComponent.Body>
+            <div className={classes.moveRight}>
+                <div className={classes.accent}>
+                    <CardAccent color={accentColor} />
+                </div>
+            </div>
+            {title && <CardComponent.Header className={classes.cardHeader}>{title}</CardComponent.Header>}
+            <CardComponent.Body className={classes.cardBody}>{children}</CardComponent.Body>
         </CardComponent>
     );
 };

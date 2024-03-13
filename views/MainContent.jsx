@@ -10,7 +10,8 @@ import NavigationBar from '../components/NavBarFactory/NavBar/NavBar';
  */
 
 const MainContent = (props) => {
-    const [view, setView] = useState('FedMall');
+    const { backgroundColor } = props;
+    const [view, setView] = useState('NIH');
     const NavParams = {
         activeTab: view,
         tabList: ['NIH', 'DLA', 'Louisiana Grid Coalition', 'BMyVillage', 'Booksmarts', 'Tiffin Airsoft and Paintball', 'Feytouched Tech'],
@@ -18,7 +19,7 @@ const MainContent = (props) => {
     return (
         <>
             <Container className={classes.Container}>
-                <Card className={classes.Card}>
+                <Card className={classes.Card} accentColor={backgroundColor}>
                     <NavigationBar activeTab={NavParams.activeTab} tabList={NavParams.tabList} setTab={setView} />
                     <ViewHandler state={view} />
                 </Card>

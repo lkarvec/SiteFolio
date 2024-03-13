@@ -5,7 +5,18 @@
     border: 1px solid $borderColor;
     border-radius: 5px;
     align-items: center;
-    opacity: 90%;
+    overflow: hidden;
+    .moveRight {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        .accent {
+            z-index: 1;
+            path {
+                transition: fill 15s ease;
+            }
+        }
+    }
 }
 
 .card:hover {
@@ -19,6 +30,7 @@
 .cardBody {
     width: 100%;
     padding: 15px;
+    z-index: 10;
 }
 
 .selected {

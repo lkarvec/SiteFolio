@@ -47,7 +47,7 @@ function App() {
         <div className={classes.wrapper}>
             <div style={styleTwo} />
             <div style={styleOne} />
-            <MainContent />
+            <MainContent backgroundColor={opacity ? '#42b6c6' : '#4b95f0'} />
         </div>
     );
 }
