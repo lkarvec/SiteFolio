@@ -48,34 +48,34 @@
 }
 
 .cloud2 {
-    animation: bobble 9s infinite;
+    animation: bounce 9s infinite;
 }
 
 .cloud3 {
-    animation: bobble 7.6s infinite;
+    animation: bounce 7.6s infinite;
 }
 
 .cloud4 {
-    animation: bobble 9.5s infinite;
+    animation: bounce 9.5s infinite;
 }
 
 .cloud5 {
-    animation: bobbleways 17s infinite;
+    animation: altBounce 17s infinite;
 }
 
 .cloud6 {
-    animation: bobble 16s infinite;
+    animation: bounce 16s infinite;
 }
 
 .cloud7 {
-    animation: bobble 12s infinite;
+    animation: bounce 12s infinite;
 }
 
 .cloud8 {
-    animation: bobbleways 22.6s infinite;
+    animation: altBounce 22.6s infinite;
 }
 
-@keyframes bobble {
+@keyframes bounce {
     0% {
         transform: translate3d(50px, 40px, 0px);
         animation-timing-function: ease-in;
@@ -91,7 +91,7 @@
     }
 }
 
-@keyframes bobbleways {
+@keyframes altBounce {
     0% {
         transform: translate3d(50px, 40px, 30px);
         animation-timing-function: ease-in;
