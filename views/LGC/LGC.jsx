@@ -10,9 +10,6 @@ const LGC = () => {
         <>
             <Container className={classes.Container}>
                 <Row className="mt-4 mb-4">
-                    <Col lg={1}>
-                        <img src={'./LA-Grid-Coalition-logo.png'} className={classes.LGCLogo} />
-                    </Col>
                     <Col lg={{ span: 5 }}>
                         <h2>Louisiana Grid Coalition</h2>
                         <h3>Full-Stack Software Engineer</h3>

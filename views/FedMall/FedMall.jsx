@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import ImageFlip from '../../components/Images/ImageFlip/ImageFlip';
 import links from '../../constants/imageUrls.module.scss';
 import classes from './FedMall.module.scss';
+import Card from '../../components/Card/Card';
 
 /*
  */
@@ -11,14 +12,24 @@ const FedMall = () => {
     return (
         <>
             <Container className={classes.Container}>
-                <Row className="mt-4 mb-3">
-                    <Col lg={1}>
-                        <img src={'./DLALogo.png'} className={classes.DLALogo} />
-                    </Col>
-                    <Col lg={{ span: 5 }}>
+                <Row className="mt-4 mb-4">
+                    <Col lg={{ span: 4 }}>
                         <h2>Defense Logistics Agency</h2>
                         <h3>Senior/Lead Software Engineer</h3>
                         <h4>December 2021 - January 2023</h4>
+                    </Col>
+                    <Col lg={{ offset: 1, span: 6 }}>
+                        <Card>
+                            Leon always works to use best practices even when they weren&apos;t pushed from above. He has drive and
+                            commitment to providing solid solutions, and can work together with folks of different disciplines to come up
+                            with the best available solution. He takes initiative when he sees a place where things could fall through and
+                            is upfront about issues he sees that need attention. When our senior dev stepped down, he stepped up to fill
+                            that void, making sure the less experienced devs didn&apos;t lack for direction and kept up with best practices.
+                            [...] Overall, it was a pleasure to work with him and I think he could go far with the right opportunities.
+                            <ul>
+                                - <a href="https://www.linkedin.com/in/jamie-dockendorff-a21747105">Jamie Dockendorff</a>, Software Engineer
+                            </ul>
+                        </Card>
                     </Col>
                 </Row>
                 <Row className="mb-3">
@@ -44,13 +55,13 @@ const FedMall = () => {
                             this older site away from it&apos;s JSP heavy architecture into a React and Next.js environment.
                         </p>
                         <p>
-                            I quickly advanced to a Lead position, taking over for my previous Lead,{' '}
+                            I quickly advanced to a Lead Software Engineer position, taking over for my previous Lead,{' '}
                             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mmiller1102/">
                                 Michael Miller
                             </a>
-                            , as the Lead Software Engineer during the MOES (Material Order Entry System), and my leadership and foresight
-                            enabled MOES to be the first project on the contract releasing early without overtime, instead of every other
-                            project being late by several months.
+                            , during the start of MOES (Material Order Entry System), and my leadership and foresight enabled MOES to be the
+                            first project on the contract releasing early without overtime, instead of every other project being late by
+                            several months.
                         </p>
                         <p>
                             I continued being the Lead Software Engineer through the Partnet transition, working very closely with our

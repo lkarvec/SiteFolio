@@ -12,9 +12,6 @@ const Booksmarts = () => {
         <>
             <Container className={classes.Container}>
                 <Row className="mt-4 mb-3">
-                    <Col lg={1}>
-                        <img src={'./bookSmartsLogo.jpg'} className={classes.bookLogo} />
-                    </Col>
                     <Col lg={{ span: 5 }}>
                         <h2>Booksmarts LLC</h2>
                         <h3>Senior Software Developer</h3>

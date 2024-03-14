@@ -10,9 +10,6 @@ const FTT = () => {
         <>
             <Container className={classes.Container}>
                 <Row className="mt-4 mb-4">
-                    <Col lg={1}>
-                        <img src={'./Logo.png'} className={classes.fttLogo} />
-                    </Col>
                     <Col lg={{ span: 5 }}>
                         <h2>Feytouched Tech</h2>
                         <h3>Software Developer</h3>
@@ -30,6 +27,7 @@ const FTT = () => {
                             for local businesses in Tiffin. I gathered 6 interested businesses and proceeded to add in additional custom
                             content into their software on client request.
                         </p>
+                        <p>Today, I currently use Feytouched Tech as a DBA for any freelance work that comes my way.</p>
                         <h4>Experience</h4>
                         <li>
                             Designed and created a Full-Stack Python Retail PoS product with Microsoft Access, SQL Server for relational

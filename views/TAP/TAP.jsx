@@ -12,9 +12,6 @@ const TAP = () => {
         <>
             <Container className={classes.Container}>
                 <Row className="mt-4 mb-4">
-                    <Col lg={1}>
-                        <img src={'./TAPLogo.png'} className={classes.tapLogo} />
-                    </Col>
                     <Col lg={{ span: 5 }}>
                         <h2>Tiffin Airsoft and Paintball</h2>
                         <h3>Software Developer / Co-founder</h3>

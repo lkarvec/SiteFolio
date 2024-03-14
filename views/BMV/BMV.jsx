@@ -12,9 +12,6 @@ const BMV = () => {
         <>
             <Container className={classes.Container}>
                 <Row className="mt-4 mb-4">
-                    <Col lg={2}>
-                        <img src={'./BMVLogo.png'} className={classes.BMVLogo} />
-                    </Col>
                     <Col lg={{ span: 5 }}>
                         <h2>BMyVillage</h2>
                         <h3>Senior Software Developer</h3>

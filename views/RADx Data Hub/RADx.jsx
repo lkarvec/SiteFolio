@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import ImageFlip from '../../components/Images/ImageFlip/ImageFlip';
 import links from '../../constants/imageUrls.module.scss';
 import classes from './RADx.module.scss';
-import NIHLogo from '../../components/Images/svgs/NIHLogo';
+import Card from '../../components/Card/Card';
 
 /*
  */
@@ -12,14 +12,23 @@ const RADx = () => {
     return (
         <>
             <Container className={classes.Container}>
-                <Row className="mt-4 mb-3">
-                    <Col lg={1}>
-                        <NIHLogo />
-                    </Col>
-                    <Col lg={{ span: 5 }}>
+                <Row className="mt-4 mb-4">
+                    <Col lg={{ span: 4 }}>
                         <h2>National Institute of Health</h2>
                         <h3>Senior Software Engineer</h3>
                         <h4>March 2023 - March 2024</h4>
+                    </Col>
+
+                    <Col lg={{ offset: 1, span: 6 }}>
+                        <Card>
+                            Leon played a pivotal role in guiding and mentoring junior developers, fostering growth within the team. As a
+                            subject matter expert, his proficiency in key domains led to innovative and efficient solutions for the complex
+                            development problems we faced as part of the RADx program. His intuitive feedback on user experience ensured our
+                            products exceeded client expectations.
+                            <ul>
+                                - <a href="https://www.linkedin.com/in/samuel-waddell3/">Samuel Waddell</a>, Business Analyst
+                            </ul>
+                        </Card>
                     </Col>
                 </Row>
                 <Row className="mb-3">
@@ -62,7 +71,7 @@ const RADx = () => {
                         </li>
                     </Col>
                     <Col>
-                        <Row className="mt-5 mb-5">
+                        <Row className="mb-5">
                             <ImageFlip backPic={links.RADxHome} frontPic={links.RADxHelpfulInfo} />
                         </Row>
                         <Row className="mt-4">
