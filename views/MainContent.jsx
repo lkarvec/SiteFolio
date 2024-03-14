@@ -19,6 +19,16 @@ const MainContent = (props) => {
     return (
         <>
             <Container className={classes.Container}>
+                <div className={classes.intro}></div>
+
+                <Card className={classes.Card} accentColor={backgroundColor}>
+                    <NavigationBar activeTab={NavParams.activeTab} tabList={NavParams.tabList} setTab={setView} />
+                    <ViewHandler state={view} />
+                </Card>
+                <Card className={classes.Card} accentColor={backgroundColor}>
+                    <NavigationBar activeTab={NavParams.activeTab} tabList={NavParams.tabList} setTab={setView} />
+                    <ViewHandler state={view} />
+                </Card>
                 <Card className={classes.Card} accentColor={backgroundColor}>
                     <NavigationBar activeTab={NavParams.activeTab} tabList={NavParams.tabList} setTab={setView} />
                     <ViewHandler state={view} />

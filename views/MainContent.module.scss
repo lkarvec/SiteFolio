@@ -20,6 +20,89 @@
 
 .wrapper {
     position: relative;
+    min-height: 100%;
+    max-height: fit-content;
+    overflow: clip;
+    width: 100%;
+}
+
+.cloudPosition {
     height: 100%;
     width: 100%;
+    position: sticky;
+    overflow: visible;
+    top: 1px;
+    z-index: 3;
+    opacity: 70%;
+}
+
+.intro {
+    margin-top: 100%;
+}
+
+.outerWrapper {
+    position: relative;
+    min-height: 100%;
+    max-height: fit-content;
+    overflow: clip;
+}
+
+.cloud2 {
+    animation: bobble 9s infinite;
+}
+
+.cloud3 {
+    animation: bobble 7.6s infinite;
+}
+
+.cloud4 {
+    animation: bobble 9.5s infinite;
+}
+
+.cloud5 {
+    animation: bobbleways 17s infinite;
+}
+
+.cloud6 {
+    animation: bobble 16s infinite;
+}
+
+.cloud7 {
+    animation: bobble 12s infinite;
+}
+
+.cloud8 {
+    animation: bobbleways 22.6s infinite;
+}
+
+@keyframes bobble {
+    0% {
+        transform: translate3d(50px, 40px, 0px);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: translate3d(50px, 60px, 0px);
+        animation-timing-function: ease;
+    }
+
+    100% {
+        transform: translate3d(50px, 40px, 0px);
+    }
+}
+
+@keyframes bobbleways {
+    0% {
+        transform: translate3d(50px, 40px, 30px);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: translate3d(50px, 80px, 40px);
+        animation-timing-function: ease;
+    }
+
+    100% {
+        transform: translate3d(50px, 40px, 30px);
+    }
 }
