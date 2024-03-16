@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import ImageFlip from '../../components/Images/ImageFlip/ImageFlip';
-import links from '../../constants/imageUrls.module.scss';
+import ImageFlip from '../../../components/Images/ImageFlip/ImageFlip';
+import links from '../../../constants/imageUrls.module.scss';
 import classes from './Booksmarts.module.scss';
 
 /*

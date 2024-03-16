@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Booksmarts from 'views/Booksmarts/Booksmarts';
-import FedMall from 'views/FedMall/FedMall';
-import FTT from 'views/FTT/FTT';
-import TAP from 'views/TAP/TAP';
-import LGC from 'views/LGC/LGC';
-import BMV from 'views/BMV/BMV';
-import RADx from '../views/RADx Data Hub/RADx';
+import Booksmarts from 'views/WorkExperience/Booksmarts/Booksmarts';
+import FedMall from 'views/WorkExperience/FedMall/FedMall';
+import FTT from 'views/WorkExperience/FTT/FTT';
+import TAP from 'views/WorkExperience/TAP/TAP';
+import LGC from 'views/WorkExperience/LGC/LGC';
+import BMV from 'views/WorkExperience/BMV/BMV';
+import RADx from 'views/WorkExperience/RADx Data Hub/RADx';
 
 /*
  */

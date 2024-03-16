@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Card as CardComponent } from 'react-bootstrap';
 import classes from './Card.module.scss';
 import CardAccent from '../Images/svgs/cardAccent';
+import Image from 'next/image';
 
 /**
  * A visual container for other visual React components.
@@ -16,7 +17,7 @@ import CardAccent from '../Images/svgs/cardAccent';
  */
 
 const Card = (props) => {
-    const { title, children, size, selected, accent, accentColor } = props;
+    const { title, children, size, selected, accent, accentColor, type } = props;
 
     let cardClass = classes.card;
     cardClass += selected ? ` ${classes.selected}` : '';
@@ -36,11 +37,21 @@ const Card = (props) => {
             break;
     }
 
+    switch (type) {
+        case 'Hero':
+            cardClass += ` ${classes.Hero} fadeIn`;
+            break;
+        default:
+            break;
+    }
+
     return (
         <CardComponent className={cardClass}>
             <div className={classes.moveRight}>
                 <div className={classes.accent}>
-                    <CardAccent color={accentColor} />
+                    {(type !== 'Hero' && <CardAccent color={accentColor} />) || (
+                        <Image src="/LogoAlpha.png" width="75px" height="73px" style={{ opacity: 0.7 }} />
+                    )}
                 </div>
             </div>
             {title && <CardComponent.Header className={classes.cardHeader}>{title}</CardComponent.Header>}

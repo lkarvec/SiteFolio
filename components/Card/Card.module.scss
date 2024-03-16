@@ -1,7 +1,9 @@
 @import '../../styles/variables/colors.scss';
+@import '../../styles/fonts.scss';
 
 .card {
     box-shadow: -3px 4px 6px #00000020;
+    background-color: #ffffffb0;
     border: 1px solid $borderColor;
     border-radius: 5px;
     align-items: center;
@@ -24,7 +26,9 @@
 }
 
 .cardHeader {
-    background-color: inherit;
+    background: local;
+    margin-top: 10px;
+    font: $headerFont;
 }
 
 .cardBody {
@@ -50,4 +54,9 @@
 .small {
     width: 500px;
     height: 300px;
+}
+
+.Hero {
+    background: #789abe40;
+    padding: clamp(5px, 1vw, 20px);
 }

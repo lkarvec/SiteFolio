@@ -22,7 +22,6 @@ const NavigationBar = (props) => {
                     <Nav.Link
                         onClick={() => {
                             setTab(tab);
-                            console.log(tab);
                         }}
                         eventKey={tab}
                     >

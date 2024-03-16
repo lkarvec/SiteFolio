@@ -1,0 +1,34 @@
+@import '../../styles/variables/colors.scss';
+
+.container {
+    box-shadow: -3px 4px 6px #00000020;
+    display: flex;
+    width: fit-content;
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 7px;
+}
+
+.container:hover {
+    border: 1px solid $selectedBorder !important;
+}
+
+.button {
+    color: black;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+    color: #00000090;
+}
+
+.row {
+    flex-direction: row;
+}
+.column {
+    flex-direction: column;
+}

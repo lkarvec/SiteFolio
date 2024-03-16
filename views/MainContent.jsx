@@ -1,43 +1,38 @@
-import React, { useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import React from 'react';
+import { Container } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import Card from '../components/Card/Card';
 import classes from './MainContent.module.scss';
-import ViewHandler from 'lib/viewHandler';
-import NavigationBar from '../components/NavBarFactory/NavBar/NavBar';
+import Hero from './Hero/Hero';
+import dynamic from 'next/dynamic';
+import SocialButtons from '../components/SocialButtons/SocialButtons';
+
+const WorkExpCard = dynamic(() => import('./WorkExperience/WorkExpCard/WorkExpCard'), {
+    ssr: false,
+});
 
 /*
  */
 
 const MainContent = (props) => {
     const { backgroundColor } = props;
-    const [view, setView] = useState('NIH');
-    const NavParams = {
-        activeTab: view,
-        tabList: ['NIH', 'DLA', 'Louisiana Grid Coalition', 'BMyVillage', 'Booksmarts', 'Tiffin Airsoft and Paintball', 'Feytouched Tech'],
-    };
+
     return (
         <>
             <Container className={classes.Container}>
-                <div className={classes.intro}></div>
-
-                <Card className={classes.Card} accentColor={backgroundColor}>
-                    <NavigationBar activeTab={NavParams.activeTab} tabList={NavParams.tabList} setTab={setView} />
-                    <ViewHandler state={view} />
-                </Card>
-                <Card className={classes.Card} accentColor={backgroundColor}>
-                    <NavigationBar activeTab={NavParams.activeTab} tabList={NavParams.tabList} setTab={setView} />
-                    <ViewHandler state={view} />
-                </Card>
-                <Card className={classes.Card} accentColor={backgroundColor}>
-                    <NavigationBar activeTab={NavParams.activeTab} tabList={NavParams.tabList} setTab={setView} />
-                    <ViewHandler state={view} />
-                </Card>
+                <Hero />
+            </Container>
+            <div className={classes.socials}>
+                <SocialButtons />
+            </div>
+            <Container className={classes.Container}>
+                <WorkExpCard backgroundColor={backgroundColor} />
             </Container>
         </>
     );
 };
 
-MainContent.propTypes = {};
+MainContent.propTypes = {
+    backgroundColor: PropTypes.string,
+};
 
 export default MainContent;

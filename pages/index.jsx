@@ -1,36 +1,50 @@
 import { generateBackground } from '../lib/backgroundGenerator';
 import MainContent from '../views/MainContent';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import Button from '../components/Button/Button';
 import classes from '../views/MainContent.module.scss';
 import { MouseParallaxChild, MouseParallaxContainer } from 'react-parallax-mouse';
+import SocialButtons from '../components/SocialButtons/SocialButtons';
 
 function App() {
     const [backgroundOne, regenerateOne] = useState(generateBackground());
     const [backgroundTwo, regenerateTwo] = useState(generateBackground());
+
     const opacityRef = useRef(true);
     const [opacity, setOpacity] = useState(true);
+    const [styleOne, remakeStyleOne] = useState({
+        background: backgroundOne,
+        height: '100%',
+        width: '100%',
+        transition: 'opacity 15s ease',
+        position: 'absolute',
+        opacity: opacity ? 0 : 1,
+    });
+    const [styleTwo, remakeStyleTwo] = useState({
+        background: backgroundTwo,
+        height: '100%',
+        width: '100%',
+        transition: 'opacity 15s ease',
+        position: 'absolute',
+        opacity: opacity ? 1 : 0,
+    });
 
-    const styleOne = useMemo(() => {
-        return {
+    useEffect(() => {
+        remakeStyleOne({
             background: backgroundOne,
             height: '100%',
             width: '100%',
             transition: 'opacity 15s ease',
             position: 'absolute',
             opacity: opacity ? 0 : 1,
-        };
-    }, [opacity]);
-
-    const styleTwo = useMemo(() => {
-        return {
+        });
+        remakeStyleTwo({
             background: backgroundTwo,
             height: '100%',
             width: '100%',
             transition: 'opacity 15s ease',
             position: 'absolute',
             opacity: opacity ? 1 : 0,
-        };
+        });
     }, [opacity]);
 
     useEffect(() => {
@@ -169,10 +183,14 @@ function App() {
                         </MouseParallaxChild>
                     </MouseParallaxContainer>
                 </div>
+
                 <div className={classes.wrapper}>
                     <div style={styleTwo} />
                     <div style={styleOne} />
                     <MainContent backgroundColor={opacity ? '#42b6c6' : '#4b95f0'} />
+                    <div className={classes.footer}>
+                        <SocialButtons variant="footer" />
+                    </div>
                 </div>
             </div>
         </>

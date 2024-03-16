@@ -1,9 +1,9 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import ImageFlip from '../../components/Images/ImageFlip/ImageFlip';
-import links from '../../constants/imageUrls.module.scss';
+import ImageFlip from '../../../components/Images/ImageFlip/ImageFlip';
+import links from '../../../constants/imageUrls.module.scss';
 import classes from './RADx.module.scss';
-import Card from '../../components/Card/Card';
+import Card from '../../../components/Card/Card';
 
 /*
  */
@@ -13,13 +13,13 @@ const RADx = () => {
         <>
             <Container className={classes.Container}>
                 <Row className="mt-4 mb-4">
-                    <Col lg={{ span: 4 }}>
+                    <Col md={12} lg={{ span: 4 }}>
                         <h2>National Institute of Health</h2>
                         <h3>Senior Software Engineer</h3>
                         <h4>March 2023 - March 2024</h4>
                     </Col>
 
-                    <Col lg={{ offset: 1, span: 6 }}>
+                    <Col md={12} lg={{ offset: 1, span: 6 }}>
                         <Card>
                             Leon played a pivotal role in guiding and mentoring junior developers, fostering growth within the team. As a
                             subject matter expert, his proficiency in key domains led to innovative and efficient solutions for the complex
