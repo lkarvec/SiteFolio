@@ -1,6 +1,6 @@
 import { generateBackground } from '../lib/backgroundGenerator';
 import MainContent from '../views/MainContent';
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import classes from '../views/MainContent.module.scss';
 import { MouseParallaxChild, MouseParallaxContainer } from 'react-parallax-mouse';
 import SocialButtons from '../components/SocialButtons/SocialButtons';
@@ -52,7 +52,7 @@ function App() {
             opacityRef.current = !opacityRef.current;
             setOpacity(opacityRef.current);
             opacityRef.current ? regenerateTwo(generateBackground()) : regenerateOne(generateBackground());
-        }, 15700);
+        }, 15750);
         return () => {
             clearInterval(interval);
         };
