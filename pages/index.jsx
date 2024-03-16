@@ -61,7 +61,7 @@ function App() {
     return (
         <>
             <div className={classes.outerWrapper}>
-                <div className={classes.cloudPosition}>
+                <div className={`${classes.cloudPosition} fadeClouds`}>
                     <MouseParallaxContainer
                         globalFactorX={0.15}
                         globalFactorY={0.15}

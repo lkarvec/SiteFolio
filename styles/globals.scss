@@ -77,11 +77,36 @@ a:hover {
             transform: translate3d(0px, 30px, 0px);
             animation-timing-function: ease-in-out;
         }
+        50% {
+            opacity: 0;
+            transform: translate3d(0px, 30px, 0px);
+            animation-timing-function: ease-in-out;
+        }
         100% {
             opacity: 1;
             transform: translate3d(0px, 0px, 0px);
             animation-timing-function: ease-in-out;
         }
     }
-    animation: fadein 2s linear;
+    animation: fadein 3s linear;
+}
+
+.fadeClouds {
+    @keyframes fadeclouds {
+        0% {
+            opacity: 0;
+            transform: translate3d(0px, 30px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+        15% {
+            opacity: 0;
+            transform: translate3d(0px, 30px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            transform: translate3d(0px, 0px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+    }
+    animation: fadeclouds 1.5s linear;
 }
