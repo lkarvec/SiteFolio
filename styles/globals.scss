@@ -157,3 +157,12 @@ a:hover {
     }
     animation: bouncegeneral 60s infinite;
 }
+
+.flipImage {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+}

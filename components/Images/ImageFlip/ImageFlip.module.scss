@@ -9,7 +9,7 @@
     }
     @media (min-width: 992px) {
         width: clamp(250px, 30vw, 450px);
-        height: clamp(168px, 19.12vw, 298px);
+        height: clamp(140px, 19.12vw, 298px);
     }
     cursor: pointer;
     border: 1px solid $borderColor;
@@ -45,7 +45,7 @@
     @media (min-width: 992px) {
         margin-left: 40px;
         width: clamp(250px, 30vw, 450px);
-        height: clamp(168px, 19.12vw, 298px);
+        height: clamp(140px, 19.12vw, 298px);
     }
     &:hover {
         translate: y -10px;

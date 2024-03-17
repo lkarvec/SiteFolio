@@ -16,7 +16,7 @@ const FTT = () => {
                         <h4>January 2015 - July 2017</h4>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="mb-4">
                     <Col>
                         <p>
                             During my time co-founding Tiffin Airsoft and Paintball with my good buddy Trenton Trevino, I looked for ways to

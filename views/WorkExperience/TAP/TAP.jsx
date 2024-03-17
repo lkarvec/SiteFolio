@@ -20,8 +20,8 @@ const TAP = () => {
                 </Row>
             </Container>
             <Container>
-                <Row>
-                    <Col lg={8}>
+                <Row className="mb-4">
+                    <Col>
                         <p>
                             A close friend and I founded a business together in Tiffin, Ohio to hopefully get kids more active and off the
                             streets during the height of the Opioid crisis in Ohio. We ran this business for about a year and a half, and
@@ -39,10 +39,10 @@ const TAP = () => {
                             help the business secure $15,000 (DBA Feytouched Tech) in additional funding in its start-up phase.
                         </li>
                     </Col>
-                    <Col>
-                        <Row className="mb-5">
+                    <Col lg={5}>
+                        <div className="flipImage">
                             <ImageFlip backPic={links.Tap1} frontPic={links.Tap2} />
-                        </Row>
+                        </div>
                     </Col>
                 </Row>
             </Container>

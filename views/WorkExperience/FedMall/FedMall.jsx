@@ -32,8 +32,8 @@ const FedMall = () => {
                         </Card>
                     </Col>
                 </Row>
-                <Row className="mb-3">
-                    <Col lg={8}>
+                <Row className="mb-4">
+                    <Col>
                         <p>
                             My time working on the{' '}
                             <a
@@ -109,13 +109,11 @@ const FedMall = () => {
                             performing audits for Credence.
                         </li>
                     </Col>
-                    <Col>
-                        <Row className="mb-5">
+                    <Col lg={5}>
+                        <div className="flipImage">
                             <ImageFlip backPic={links.Fed1} frontPic={links.Fed2} />
-                        </Row>
-                        <Row className="mt-4">
                             <ImageFlip backPic={links.Fed3} frontPic={links.Fed4} />
-                        </Row>
+                        </div>
                     </Col>
                 </Row>
             </Container>

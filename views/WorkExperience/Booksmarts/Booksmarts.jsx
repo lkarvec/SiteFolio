@@ -20,8 +20,8 @@ const Booksmarts = () => {
                 </Row>
             </Container>
             <Container>
-                <Row>
-                    <Col lg={8}>
+                <Row className="mb-4">
+                    <Col>
                         <p>
                             I&apos;ve always been into the Politics space, even showing up on some podcasts myself. Booksmarts reached out
                             to his community for webdevs that would be interested in working for him on his website. The initial plan was to
@@ -52,14 +52,11 @@ const Booksmarts = () => {
                         </li>
                         <li>Collaborated with design to create wireframes in Figma for the React component library and site pages.</li>
                     </Col>
-
-                    <Col>
-                        <Row className="mb-5">
+                    <Col lg={5}>
+                        <div className="flipImage">
                             <ImageFlip backPic={links.book1} frontPic={links.book2} />
-                        </Row>
-                        <Row className="mb-4">
                             <ImageFlip backPic={links.bookFigma} frontPic={links.bookScreen} />
-                        </Row>
+                        </div>
                     </Col>
                 </Row>
             </Container>

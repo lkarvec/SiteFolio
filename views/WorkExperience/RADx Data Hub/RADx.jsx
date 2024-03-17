@@ -31,7 +31,7 @@ const RADx = () => {
                         </Card>
                     </Col>
                 </Row>
-                <Row className="mb-3">
+                <Row className="mb-4">
                     <Col>
                         <p>
                             Moving away from Fedmall, <a href="https://www.boozallen.com/">Booz Allen Hamilton</a> quickly picked me up to
@@ -71,7 +71,7 @@ const RADx = () => {
                         </li>
                     </Col>
                     <Col lg={5}>
-                        <div className={classes.flipImage}>
+                        <div className="flipImage">
                             <ImageFlip backPic={links.RADxHome} frontPic={links.RADxHelpfulInfo} />
                             <ImageFlip backPic={links.RADxStudyExplorer} frontPic={links.Fed4} />
                         </div>

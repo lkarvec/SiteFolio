@@ -18,8 +18,8 @@ const BMV = () => {
                         <h4>January 2021 - May 2021</h4>
                     </Col>
                 </Row>
-                <Row>
-                    <Col lg={8}>
+                <Row className="mb-4">
+                    <Col>
                         <p>
                             During my last semester at UTSA, I worked with Belinda Medellin to enhance her Teacher Mentoring website with a
                             BetterHelp-like inspired questionnaire to on-board new customers to her platform, as well as a complete website
@@ -39,8 +39,10 @@ const BMV = () => {
                             feedback.
                         </li>
                     </Col>
-                    <Col className="mb-4">
-                        <ImageFlip backPic={links.BMV1} frontPic={links.BMV2} />
+                    <Col lg={5}>
+                        <div className="flipImage">
+                            <ImageFlip backPic={links.BMV1} frontPic={links.BMV2} />
+                        </div>
                     </Col>
                 </Row>
             </Container>

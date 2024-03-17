@@ -18,7 +18,7 @@ const LGC = () => {
                 </Row>
             </Container>
             <Container>
-                <Row>
+                <Row className="mb-4">
                     <Col lg={8}>
                         <p>
                             For my independent study, I partnered with{' '}
