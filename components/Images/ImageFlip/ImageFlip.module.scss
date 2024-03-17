@@ -2,10 +2,15 @@
 
 .c {
     position: absolute;
-    max-width: 600px;
-    max-height: 500px;
-    width: 350px;
-    height: 200px;
+
+    @media (max-width: 991px) {
+        width: clamp(300px, 50vw, 800px);
+        height: clamp(168px, 28.12vw, 450px);
+    }
+    @media (min-width: 992px) {
+        width: clamp(250px, 30vw, 450px);
+        height: clamp(168px, 19.12vw, 298px);
+    }
     cursor: pointer;
     border: 1px solid $borderColor;
     will-change: transform, opacity;
@@ -30,10 +35,18 @@
 .container {
     display: flex;
     align-items: center;
-    height: 200px;
-    width: 350px;
-    justify-content: center;
 
+    justify-content: center;
+    @media (max-width: 991px) {
+        margin-top: 25px;
+        width: clamp(300px, 50vw, 800px);
+        height: clamp(168px, 28.12vw, 450px);
+    }
+    @media (min-width: 992px) {
+        margin-left: 40px;
+        width: clamp(250px, 30vw, 450px);
+        height: clamp(168px, 19.12vw, 298px);
+    }
     &:hover {
         translate: y -10px;
         transition: var(--transition);

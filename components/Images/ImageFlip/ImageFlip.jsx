@@ -15,25 +15,8 @@ import { useSpring, animated } from '@react-spring/web';
  */
 
 const ImageFlip = (props) => {
-    const { size, selected, backPic, frontPic } = props;
+    const { backPic, frontPic } = props;
 
-    let ImageFlipClass = classes.ImageFlip;
-    ImageFlipClass += selected ? ` ${classes.selected}` : '';
-
-    switch (size) {
-        case 'small':
-            ImageFlipClass += ` ${classes.small}`;
-            break;
-        case 'medium':
-            ImageFlipClass += ` ${classes.medium}`;
-            break;
-        case 'large':
-            ImageFlipClass += ` ${classes.large}`;
-            break;
-        default:
-            ImageFlipClass += ` ${classes.auto}`;
-            break;
-    }
     const cardStyle = `${classes.c} `;
     const backStyle = cardStyle + backPic;
     const frontStyle = cardStyle + frontPic;

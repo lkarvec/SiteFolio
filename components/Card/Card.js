@@ -20,6 +20,7 @@ const Card = (props) => {
     const { title, children, size, selected, accent, accentColor, type } = props;
 
     let cardClass = classes.card;
+    let cardBody = classes.cardBody;
     cardClass += selected ? ` ${classes.selected}` : '';
 
     switch (size) {
@@ -41,6 +42,9 @@ const Card = (props) => {
         case 'Hero':
             cardClass += ` ${classes.Hero} fadeIn`;
             break;
+        case 'About':
+            cardBody += ` ${classes.About}`;
+            break;
         default:
             break;
     }
@@ -55,13 +59,9 @@ const Card = (props) => {
                 </div>
             </div>
             {title && <CardComponent.Header className={classes.cardHeader}>{title}</CardComponent.Header>}
-            <CardComponent.Body className={classes.cardBody}>{children}</CardComponent.Body>
+            <CardComponent.Body className={cardBody}>{children}</CardComponent.Body>
         </CardComponent>
     );
-};
-
-Card.defaultProps = {
-    title: '',
 };
 
 Card.propTypes = {

@@ -32,7 +32,7 @@ const RADx = () => {
                     </Col>
                 </Row>
                 <Row className="mb-3">
-                    <Col lg={8}>
+                    <Col>
                         <p>
                             Moving away from Fedmall, <a href="https://www.boozallen.com/">Booz Allen Hamilton</a> quickly picked me up to
                             work on their RADx Data Hub&apos;s 3.0 modernization efforts to lead the frontend team, and I was tasked to
@@ -70,13 +70,11 @@ const RADx = () => {
                             design.
                         </li>
                     </Col>
-                    <Col>
-                        <Row className="mb-5">
+                    <Col lg={5}>
+                        <div className={classes.flipImage}>
                             <ImageFlip backPic={links.RADxHome} frontPic={links.RADxHelpfulInfo} />
-                        </Row>
-                        <Row className="mt-4">
                             <ImageFlip backPic={links.RADxStudyExplorer} frontPic={links.Fed4} />
-                        </Row>
+                        </div>
                     </Col>
                 </Row>
             </Container>

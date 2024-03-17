@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-    font: normal normal bold clamp(40px, 8vw, 80px) Arial;
+    font: normal normal bold clamp(40px, 7vw, 80px) Arial;
 }
 
 h2 {
@@ -109,4 +109,51 @@ a:hover {
         }
     }
     animation: fadeclouds 1.5s linear;
+}
+
+.bounceGeneral {
+    @keyframes bouncegeneral {
+        0% {
+            transform: translate3d(0px, 0px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        15% {
+            transform: translate3d(random(15) - 7 + px, random(10) - 5 + px, 0px);
+            animation-timing-function: ease;
+        }
+        30% {
+            transform: translate3d(0px, 0px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        40% {
+            transform: translate3d(random(15) - 8 + px, random(10) - 5 + px, 0px);
+            animation-timing-function: ease;
+        }
+        50% {
+            transform: translate3d(0px, 0px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        60% {
+            transform: translate3d(random(15) - 7 + px, random(10) - 5 + px, 0px);
+            animation-timing-function: ease;
+        }
+        75% {
+            transform: translate3d(0px, 0px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        90% {
+            transform: translate3d(random(15) - 8 + px, random(10) - 5 + px, 0px);
+            animation-timing-function: ease;
+        }
+
+        100% {
+            transform: translate3d(0px, 0px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+    }
+    animation: bouncegeneral 60s infinite;
 }

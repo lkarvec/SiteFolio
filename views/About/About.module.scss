@@ -1,0 +1,42 @@
+.intro {
+    margin-bottom: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+}
+
+.centeredImage {
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageBackdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 330px;
+    background: #789abe40;
+    border-radius: 12px;
+    padding: clamp(5px, 1vw, 20px);
+}
+
+.aboutHeader {
+    font: normal normal bold clamp(38px, 6vw, 80px) Arial;
+    border-bottom: 2px solid #00000060;
+    padding-bottom: clamp(1px, 0.3vw, 5px);
+}
