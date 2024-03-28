@@ -1,40 +1,66 @@
-@import "../../styles/variables/colors.scss";
+@import '../../styles/variables/colors.scss';
+@import '../../styles/fonts.scss';
 
 .card {
-  box-shadow: -3px 4px 6px #00000020;
-  border: 1px solid $borderColor;
-  border-radius: 5px;
-  align-items: center;
+    box-shadow: -3px 4px 6px #00000020;
+    background-color: #ffffffb0;
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+    align-items: center;
+    overflow: hidden;
+    .moveRight {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        .accent {
+            z-index: 1;
+            path {
+                transition: fill 15s ease;
+            }
+        }
+    }
 }
 
 .card:hover {
-    border: 2px solid $selectedBorder !important;
+    border: 1px solid $selectedBorder !important;
 }
 
 .cardHeader {
-  background-color: inherit;
+    background: local;
+    margin-top: 10px;
+    font: $headerFont;
 }
 
 .cardBody {
     width: 100%;
     padding: 15px;
+    z-index: 10;
 }
 
 .selected {
-  border: 2px solid $selectedBorder !important;
+    border: 2px solid $selectedBorder !important;
 }
 
 .large {
-  width: 500px;
-  height: 700px;
+    width: 1100px;
+    height: 900px;
 }
 
 .medium {
-  width: 500px;
-  height: 500px;
+    width: 500px;
+    height: 500px;
 }
 
 .small {
-  width: 500px;
-  height: 300px;
+    width: 500px;
+    height: 300px;
+}
+
+.Hero {
+    background: #789abe40;
+    padding: clamp(5px, 1vw, 20px);
+}
+
+.About {
+    padding: clamp(20px, 5vw, 40px);
 }

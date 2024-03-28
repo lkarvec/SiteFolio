@@ -1,19 +1,34 @@
-@import "~bootstrap/scss/bootstrap";
-@import "fonts";
-@import "variables/colors.scss";
+@import '~bootstrap/scss/bootstrap';
+@import 'fonts';
+@import 'variables/colors.scss';
 
 html,
 body {
     height: 100%;
-    background: $background;
-    color: $PrimaryColor;
+    color: $DarkColor;
     padding: 0;
     margin: 0;
-    font-family: $primary-font;
+    font: $primary-font;
 
     #__next {
         height: 100%;
     }
+}
+
+h1 {
+    font: normal normal bold clamp(40px, 7vw, 80px) Arial;
+}
+
+h2 {
+    font: normal normal bold clamp(16px, 8vw, 24px) Arial;
+}
+
+h3 {
+    font: normal normal bold clamp(14px, 6vw, 20px) Arial;
+}
+
+h4 {
+    font: normal normal bold clamp(12px, 4vw, 20px) Arial;
 }
 
 h5 {
@@ -36,18 +51,118 @@ a:hover {
     font-weight: $bold;
 }
 
-.button-primary, .button-outline-primary {
+.button-primary,
+.button-outline-primary {
     font-size: 16px !important;
 }
 
-.button-primary, .button-primary:hover {
+.button-primary,
+.button-primary:hover {
     background: $PrimaryBackground;
     color: $PrimaryColor;
 }
 
-.button-outline-primary, .button-outline-primary:hover  {
+.button-outline-primary,
+.button-outline-primary:hover {
     background: $SecondaryBackground;
     color: $SecondaryColor;
     border-color: $SecondaryOutlineColor !important;
     border: 2px solid;
+}
+
+.fadeIn {
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+            transform: translate3d(0px, 30px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+        50% {
+            opacity: 0;
+            transform: translate3d(0px, 30px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            opacity: 1;
+            transform: translate3d(0px, 0px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+    }
+    animation: fadein 3s linear;
+}
+
+.fadeClouds {
+    @keyframes fadeclouds {
+        0% {
+            opacity: 0;
+            transform: translate3d(0px, 30px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+        15% {
+            opacity: 0;
+            transform: translate3d(0px, 30px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            transform: translate3d(0px, 0px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+    }
+    animation: fadeclouds 1.5s linear;
+}
+
+.bounceGeneral {
+    @keyframes bouncegeneral {
+        0% {
+            transform: translate3d(0px, 0px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        15% {
+            transform: translate3d(random(15) - 7 + px, random(10) - 5 + px, 0px);
+            animation-timing-function: ease;
+        }
+        30% {
+            transform: translate3d(0px, 0px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        40% {
+            transform: translate3d(random(15) - 8 + px, random(10) - 5 + px, 0px);
+            animation-timing-function: ease;
+        }
+        50% {
+            transform: translate3d(0px, 0px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        60% {
+            transform: translate3d(random(15) - 7 + px, random(10) - 5 + px, 0px);
+            animation-timing-function: ease;
+        }
+        75% {
+            transform: translate3d(0px, 0px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        90% {
+            transform: translate3d(random(15) - 8 + px, random(10) - 5 + px, 0px);
+            animation-timing-function: ease;
+        }
+
+        100% {
+            transform: translate3d(0px, 0px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+    }
+    animation: bouncegeneral 60s infinite;
+}
+
+.flipImage {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
 }

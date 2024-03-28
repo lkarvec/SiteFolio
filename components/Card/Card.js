@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card as CardComponent } from 'react-bootstrap';
 import classes from './Card.module.scss';
+import CardAccent from '../Images/svgs/cardAccent';
+import Image from 'next/image';
 
 /**
  * A visual container for other visual React components.
@@ -15,14 +17,10 @@ import classes from './Card.module.scss';
  */
 
 const Card = (props) => {
-    const {
-        title,
-        children,
-        size,
-        selected,
-    } = props;
+    const { title, children, size, selected, accent, accentColor, type } = props;
 
     let cardClass = classes.card;
+    let cardBody = classes.cardBody;
     cardClass += selected ? ` ${classes.selected}` : '';
 
     switch (size) {
@@ -40,22 +38,30 @@ const Card = (props) => {
             break;
     }
 
+    switch (type) {
+        case 'Hero':
+            cardClass += ` ${classes.Hero} fadeIn`;
+            break;
+        case 'About':
+            cardBody += ` ${classes.About}`;
+            break;
+        default:
+            break;
+    }
+
     return (
         <CardComponent className={cardClass}>
-            {title && (
-                <CardComponent.Header className={classes.cardHeader}>
-                    {title}
-                </CardComponent.Header>
-            ) }
-            <CardComponent.Body className={classes.cardBody}>
-                {children}
-            </CardComponent.Body>
+            <div className={classes.moveRight}>
+                <div className={classes.accent}>
+                    {(type !== 'Hero' && <CardAccent color={accentColor} />) || (
+                        <Image src="/LogoAlpha.png" width="75px" height="73px" style={{ opacity: 0.7 }} />
+                    )}
+                </div>
+            </div>
+            {title && <CardComponent.Header className={classes.cardHeader}>{title}</CardComponent.Header>}
+            <CardComponent.Body className={cardBody}>{children}</CardComponent.Body>
         </CardComponent>
     );
-};
-
-Card.defaultProps = {
-    title: '',
 };
 
 Card.propTypes = {

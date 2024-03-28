@@ -1,0 +1,124 @@
+.Container {
+    justify-content: center;
+    position: relative;
+    z-index: 4;
+}
+
+.Card {
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+    transition: height 1s ease 0.11s;
+}
+
+.regenerate {
+    left: 20px;
+    bottom: 20px;
+    position: fixed;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    max-height: fit-content;
+    overflow: clip;
+    width: 100%;
+}
+
+.cloudPosition {
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    overflow: visible;
+    top: 1px;
+    z-index: 3;
+    opacity: 70%;
+}
+
+.outerWrapper {
+    position: relative;
+    min-height: 100vh;
+    max-height: fit-content;
+    overflow: clip;
+}
+
+.cloud2 {
+    animation: bounce 9s infinite;
+}
+
+.cloud3 {
+    animation: bounce 7.6s infinite;
+}
+
+.cloud4 {
+    animation: bounce 9.5s infinite;
+}
+
+.cloud5 {
+    animation: altBounce 17s infinite;
+}
+
+.cloud6 {
+    animation: bounce 16s infinite;
+}
+
+.cloud7 {
+    animation: bounce 12s infinite;
+}
+
+.cloud8 {
+    animation: altBounce 22.6s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate3d(50px, 40px, 0px);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: translate3d(50px, 60px, 0px);
+        animation-timing-function: ease;
+    }
+
+    100% {
+        transform: translate3d(50px, 40px, 0px);
+    }
+}
+
+@keyframes altBounce {
+    0% {
+        transform: translate3d(50px, 40px, 30px);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: translate3d(50px, 80px, 40px);
+        animation-timing-function: ease;
+    }
+
+    100% {
+        transform: translate3d(50px, 40px, 30px);
+    }
+}
+
+.socials {
+    width: 40px;
+    position: fixed;
+    top: 25px;
+    left: 20px;
+    z-index: 10;
+    @media (max-width: 1500px) {
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+.footer {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}

@@ -12,20 +12,14 @@ import classes from './Accordion.module.scss';
  * @property {String} [title] - Title in the header of the Accordion
  * @property {Node} children - Contains any element being rendered within the Accordion's body
  * @property {String} [eventKey='0'] - ID that controls the click event for opening the Accordion.  Needs to be unique.
- * @property {String} [key] - String that identifies a key that will toggle the show state of the accordion.  
+ * @property {String} [key] - String that identifies a key that will toggle the show state of the accordion.
  * @property {String | Array <String>} [defaultActiveKey] - ID that controls opening and closing without a click event key.
  * @returns {JSX} - Accordion Component
  */
 
 const Accordion = (props) => {
-    const {
-        defaultActiveKey,
-        eventKey,
-        title,
-        children,
-        key
-    } = props;
-    
+    const { defaultActiveKey, eventKey, title, children, key } = props;
+
     const [show, setShow] = useState('');
 
     function onKeyPressed(e) {
@@ -40,7 +34,6 @@ const Accordion = (props) => {
         }
     }
 
-
     return (
         <BSAccordion
             tabIndex="0"
@@ -52,9 +45,7 @@ const Accordion = (props) => {
         >
             <BSAccordion.Item eventKey={eventKey} className={classes.collapse + ' ' + show}>
                 <BSAccordion.Header>{title}</BSAccordion.Header>
-                <BSAccordion.Body className={classes.cardBody}>
-                    {children}
-                </BSAccordion.Body>
+                <BSAccordion.Body className={classes.cardBody}>{children}</BSAccordion.Body>
             </BSAccordion.Item>
         </BSAccordion>
     );

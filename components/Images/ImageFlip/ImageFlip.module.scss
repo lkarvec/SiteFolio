@@ -1,0 +1,54 @@
+@import '../../../styles/variables/colors.scss';
+
+.c {
+    position: absolute;
+
+    @media (max-width: 991px) {
+        width: clamp(300px, 50vw, 800px);
+        height: clamp(168px, 28.12vw, 450px);
+    }
+    @media (min-width: 992px) {
+        width: clamp(250px, 30vw, 450px);
+        height: clamp(140px, 19.12vw, 298px);
+    }
+    cursor: pointer;
+    border: 1px solid $borderColor;
+    will-change: transform, opacity;
+    box-shadow: -7px 7px 6px #00000040;
+
+    &:hover {
+        translate: y -10px;
+        transition: var(--transition);
+    }
+}
+
+.c:hover {
+    translate: y -10px;
+    transition: var(--transition);
+}
+
+.front,
+.back {
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    @media (max-width: 991px) {
+        margin-top: 25px;
+        width: clamp(300px, 50vw, 800px);
+        height: clamp(168px, 28.12vw, 450px);
+    }
+    @media (min-width: 992px) {
+        margin-left: 40px;
+        width: clamp(250px, 30vw, 450px);
+        height: clamp(140px, 19.12vw, 298px);
+    }
+    &:hover {
+        translate: y -10px;
+        transition: var(--transition);
+    }
+}

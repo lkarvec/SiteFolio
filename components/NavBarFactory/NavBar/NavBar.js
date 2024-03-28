@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Nav } from 'react-bootstrap';
 
-const Tabs = (props) => {
-    const { link, tabList, activeTab, handleSelect } = props;
+const NavigationBar = (props) => {
+    const { tabList, activeTab, handleSelect, setTab } = props;
 
     const items = [];
 
@@ -19,7 +19,12 @@ const Tabs = (props) => {
         } else {
             items.push(
                 <Nav.Item>
-                    <Nav.Link href={link + tab} eventKey={tab}>
+                    <Nav.Link
+                        onClick={() => {
+                            setTab(tab);
+                        }}
+                        eventKey={tab}
+                    >
                         {tab}
                     </Nav.Link>
                 </Nav.Item>
@@ -34,11 +39,11 @@ const Tabs = (props) => {
     );
 };
 
-Tabs.propTypes = {
+NavigationBar.propTypes = {
     activeTab: PropTypes.string,
     handleSelect: PropTypes.func,
-    link: PropTypes.string,
-    tabList: PropTypes.array,
+    setTab: PropTypes.func,
+    tabList: PropTypes.array.isRequired,
 };
 
-export default Tabs;
+export default NavigationBar;

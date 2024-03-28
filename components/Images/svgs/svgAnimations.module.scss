@@ -1,0 +1,234 @@
+.diamond1 {
+    @keyframes bounce1 {
+        0% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        15% {
+            transform: translate3d(random(30) - 15 + px, random(70) + px, 0px);
+            animation-timing-function: ease;
+        }
+        30% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        40% {
+            transform: translate3d(random(30) - 15 + px, random(60) + px, 0px);
+            animation-timing-function: ease;
+        }
+        50% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        60% {
+            transform: translate3d(random(30) - 15 + px, random(70) + px, 0px);
+            animation-timing-function: ease;
+        }
+        75% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        90% {
+            transform: translate3d(random(30) - 15 + px, random(60) + px, 0px);
+            animation-timing-function: ease;
+        }
+
+        100% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+    }
+    animation: bounce1 80s infinite;
+}
+
+.diamond2 {
+    @keyframes bounce2 {
+        0% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        15% {
+            transform: translate3d(random(30) - 15 + px, random(70) + px, 0px);
+            animation-timing-function: ease;
+        }
+        30% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        40% {
+            transform: translate3d(random(30) - 15 + px, random(60) + px, 0px);
+            animation-timing-function: ease;
+        }
+        50% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        60% {
+            transform: translate3d(random(30) - 15 + px, random(70) + px, 0px);
+            animation-timing-function: ease;
+        }
+        75% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        90% {
+            transform: translate3d(random(30) - 15 + px, random(60) + px, 0px);
+            animation-timing-function: ease;
+        }
+
+        100% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+    }
+    animation: bounce2 70s infinite;
+}
+
+.diamond3 {
+    @keyframes bounce3 {
+        0% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        15% {
+            transform: translate3d(random(30) - 15 + px, random(70) + px, 0px);
+            animation-timing-function: ease;
+        }
+        30% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        40% {
+            transform: translate3d(random(30) - 15 + px, random(60) + px, 0px);
+            animation-timing-function: ease;
+        }
+        50% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        60% {
+            transform: translate3d(random(30) - 15 + px, random(70) + px, 0px);
+            animation-timing-function: ease;
+        }
+        75% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        90% {
+            transform: translate3d(random(30) - 15 + px, random(60) + px, 0px);
+            animation-timing-function: ease;
+        }
+
+        100% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+    }
+    animation: bounce3 140s infinite;
+}
+
+.diamond4 {
+    @keyframes bounce4 {
+        0% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        15% {
+            transform: translate3d(random(30) - 15 + px, random(70) + px, 0px);
+            animation-timing-function: ease;
+        }
+        30% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        40% {
+            transform: translate3d(random(30) - 15 + px, random(60) + px, 0px);
+            animation-timing-function: ease;
+        }
+        50% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        60% {
+            transform: translate3d(random(30) - 15 + px, random(70) + px, 0px);
+            animation-timing-function: ease;
+        }
+        75% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        90% {
+            transform: translate3d(random(30) - 15 + px, random(60) + px, 0px);
+            animation-timing-function: ease;
+        }
+
+        100% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+    }
+    animation: bounce4 70s infinite;
+}
+
+.diamond5 {
+    @keyframes bounce5 {
+        0% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        15% {
+            transform: translate3d(random(30) - 15 + px, random(70) + px, 0px);
+            animation-timing-function: ease;
+        }
+        30% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        40% {
+            transform: translate3d(random(30) - 15 + px, random(60) + px, 0px);
+            animation-timing-function: ease;
+        }
+        50% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        60% {
+            transform: translate3d(random(30) - 15 + px, random(70) + px, 0px);
+            animation-timing-function: ease;
+        }
+        75% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+
+        90% {
+            transform: translate3d(random(30) - 15 + px, random(60) + px, 0px);
+            animation-timing-function: ease;
+        }
+
+        100% {
+            transform: translate3d(0px, 10px, 0px);
+            animation-timing-function: ease-in-out;
+        }
+    }
+    animation: bounce5 60s infinite;
+}
