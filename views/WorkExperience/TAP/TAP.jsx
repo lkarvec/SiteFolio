@@ -39,11 +39,11 @@ const TAP = () => {
                             help the business secure $15,000 (DBA Feytouched Tech) in additional funding in its start-up phase.
                         </li>
                     </Col>
-                    <Col lg={5}>
+                    {/*<Col lg={5}>
                         <div className="flipImage">
                             <ImageFlip backPic={links.Tap1} frontPic={links.Tap2} />
-                        </div>
-                    </Col>
+    </div>
+    </Col>*/}
                 </Row>
             </Container>
         </>
