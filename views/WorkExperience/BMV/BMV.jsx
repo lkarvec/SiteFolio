@@ -25,6 +25,10 @@ const BMV = () => {
                             BetterHelp-like inspired questionnaire to on-board new customers to her platform, as well as a complete website
                             redesign to complete the preferred customer experience.
                         </p>
+                        <p>
+                            This was my first exposure to the intricate parts of UX design, like User A/B Testing, and using accessibility
+                            tooling in order to bridge the gaps for potentially motor or vision impaired users.
+                        </p>
                         <h4>Experience</h4>
                         <li>
                             Contracted to manage a team of 5 other programmers and released a Teacher Mentoring web application with
@@ -38,6 +42,7 @@ const BMV = () => {
                             Conducted User Interface testing and UX research, and adjusted the website based on user and stakeholder
                             feedback.
                         </li>
+                        <li>After implementing the new interface and questionnaire, user conversions increased by 400%.</li>
                     </Col>
                     <Col lg={5}>
                         <div className="flipImage">
