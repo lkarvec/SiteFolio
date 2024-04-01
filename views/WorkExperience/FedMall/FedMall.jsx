@@ -27,7 +27,11 @@ const FedMall = () => {
                             that void, making sure the less experienced devs didn&apos;t lack for direction and kept up with best practices.
                             [...] Overall, it was a pleasure to work with him and I think he could go far with the right opportunities.
                             <ul>
-                                - <a href="https://www.linkedin.com/in/jamie-dockendorff-a21747105">Jamie Dockendorff</a>, Software Engineer
+                                -{' '}
+                                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jamie-dockendorff-a21747105">
+                                    Jamie Dockendorff
+                                </a>
+                                , Software Engineer
                             </ul>
                         </Card>
                     </Col>

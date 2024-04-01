@@ -26,7 +26,11 @@ const RADx = () => {
                             development problems we faced as part of the RADx program. His intuitive feedback on user experience ensured our
                             products exceeded client expectations.
                             <ul>
-                                - <a href="https://www.linkedin.com/in/samuel-waddell3/">Samuel Waddell</a>, Business Analyst
+                                -{' '}
+                                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/samuel-waddell3/">
+                                    Samuel Waddell
+                                </a>
+                                , Business Analyst
                             </ul>
                         </Card>
                     </Col>
@@ -34,17 +38,34 @@ const RADx = () => {
                 <Row className="mb-4">
                     <Col>
                         <p>
-                            Moving away from Fedmall, <a href="https://www.boozallen.com/">Booz Allen Hamilton</a> quickly picked me up to
-                            work on their RADx Data Hub&apos;s 3.0 modernization efforts to lead the frontend team, and I was tasked to
-                            quickly set up and deploy the scaffolding for the new website repository. Being familiar with it&apos;s ease of
-                            use in maintainability, I chose Next.js for the framework and got to work.
+                            Moving away from Fedmall,{' '}
+                            <a target="_blank" rel="noreferrer" href="https://www.boozallen.com/">
+                                Booz Allen Hamilton
+                            </a>{' '}
+                            quickly picked me up to work on their <a target="_blank" rel="noreferrer" href="https://radxdatahub.nih.gov/" />
+                            RADx Data Hub&apos;s 3.0 modernization efforts to lead the frontend team, and I was tasked to quickly set up and
+                            deploy the scaffolding for the new website repository. Being familiar with it&apos;s ease of use in
+                            maintainability, I chose Next.js for the framework and got to work.
                         </p>{' '}
                         <p>
-                            I worked very closely with the Tech Lead <a href="https://www.linkedin.com/in/nileshjmistry/">Nilesh Mistry</a>{' '}
-                            and the Business Analyst <a href="https://www.linkedin.com/in/samuel-waddell3/">Samuel Waddell</a> to gather and
-                            confirm requirements, manage the full-stack team, and work with our partners: Renaissance Computing Institute at
-                            UNC (<a href="https://renci.org/">RENCI</a>) and <a href="https://www.stanford.edu/">Stanford University</a>; to
-                            commmunicate designs and functionality of the website.
+                            I worked very closely with the Tech Lead{' '}
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/nileshjmistry/">
+                                Nilesh Mistry
+                            </a>{' '}
+                            and the Business Analyst{' '}
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/samuel-waddell3/">
+                                Samuel Waddell
+                            </a>{' '}
+                            to gather and confirm requirements, manage the full-stack team, and work with our partners: Renaissance
+                            Computing Institute at UNC (
+                            <a target="_blank" rel="noreferrer" href="https://renci.org/">
+                                RENCI
+                            </a>
+                            ) and{' '}
+                            <a target="_blank" rel="noreferrer" href="https://www.stanford.edu/">
+                                Stanford University
+                            </a>
+                            ; to commmunicate designs and functionality of the website.
                         </p>
                         <h4>Experience</h4>
                         <li>
@@ -73,7 +94,7 @@ const RADx = () => {
                     <Col lg={5}>
                         <div className="flipImage">
                             <ImageFlip backPic={links.RADxHome} frontPic={links.RADxHelpfulInfo} />
-                            <ImageFlip backPic={links.RADxStudyExplorer} frontPic={links.Fed4} />
+                            <ImageFlip backPic={links.RADxStudyExplorer} frontPic={links.RADxStudyReg} />
                         </div>
                     </Col>
                 </Row>
