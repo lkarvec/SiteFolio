@@ -81,8 +81,8 @@ function App() {
                             factorY={0.3}
                             style={{
                                 position: 'absolute',
-                                marginTop: '40%',
-                                right: '10%',
+                                top: '1000px',
+                                right: '5%',
                                 width: '100%',
                                 height: 'auto',
                             }}
@@ -94,7 +94,7 @@ function App() {
                             factorY={0.6}
                             style={{
                                 position: 'absolute',
-                                marginTop: '27%',
+                                top: '500px',
                                 right: '15%',
                                 width: '100%',
                                 height: 'auto',
@@ -107,7 +107,7 @@ function App() {
                             factorY={0.4}
                             style={{
                                 position: 'absolute',
-                                marginTop: '50%',
+                                top: '900px',
                                 left: '70%',
                                 width: '100%',
                                 height: 'auto',
@@ -120,7 +120,7 @@ function App() {
                             factorY={0.6}
                             style={{
                                 position: 'absolute',
-                                marginTop: '18%',
+                                top: '350px',
                                 left: '70%',
                                 width: '100%',
                                 height: 'auto',
@@ -133,7 +133,7 @@ function App() {
                             factorY={0.9}
                             style={{
                                 position: 'absolute',
-                                marginTop: '40%',
+                                top: '700px',
                                 left: '55%',
                                 width: '100%',
                                 height: 'auto',
@@ -146,7 +146,7 @@ function App() {
                             factorY={1.4}
                             style={{
                                 position: 'absolute',
-                                marginTop: '45%',
+                                top: '750px',
                                 left: '10%',
                                 width: '100%',
                                 height: 'auto',
@@ -160,7 +160,7 @@ function App() {
                             style={{
                                 position: 'absolute',
                                 marginTop: '10%',
-                                right: '35%',
+                                right: '85%',
                                 width: '100%',
                                 height: 'auto',
                             }}
