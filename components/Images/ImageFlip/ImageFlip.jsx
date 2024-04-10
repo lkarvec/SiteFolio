@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classes from './ImageFlip.module.scss';
 import { useSpring, animated } from '@react-spring/web';
-//TODO rewrite the jsdocs
+// TODO rewrite the jsdocs
 /**
  * A visual container for other visual React components.
  * * See https://react-bootstrap.github.io/components/ImageFlips/ for examples and documentation
