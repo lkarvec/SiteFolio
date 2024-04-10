@@ -17,7 +17,7 @@ import Image from 'next/image';
  */
 
 const Card = (props) => {
-    const { title, children, size, selected, accent, accentColor, type } = props;
+    const { title, secondaryTitle, children, size, selected, accent, accentColor, type, cardImage, image } = props;
 
     let cardClass = classes.card;
     let cardBody = classes.cardBody;
@@ -45,12 +45,16 @@ const Card = (props) => {
         case 'About':
             cardBody += ` ${classes.About}`;
             break;
+        case 'Projects':
+            cardBody += ` ${classes.Projects}`;
+            break;
         default:
             break;
     }
 
     return (
         <CardComponent className={cardClass}>
+            <CardComponent.Img variant="top" src="" />
             <div className={classes.moveRight}>
                 <div className={classes.accent}>
                     {(type !== 'Hero' && <CardAccent color={accentColor} />) || (
@@ -58,7 +62,10 @@ const Card = (props) => {
                     )}
                 </div>
             </div>
+            {image && <Image className={cardImage} src={image.src} height={image.height} width={image.width} alt={image.alt} />}
+
             {title && <CardComponent.Header className={classes.cardHeader}>{title}</CardComponent.Header>}
+            {secondaryTitle && <CardComponent.Title className={classes.cardHeader}>{title}</CardComponent.Title>}
             <CardComponent.Body className={cardBody}>{children}</CardComponent.Body>
         </CardComponent>
     );
