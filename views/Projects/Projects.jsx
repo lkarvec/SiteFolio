@@ -21,7 +21,7 @@ const Projects = ({ backgroundColor }) => {
         <>
             <div className={classes.container} ref={revealContainer}>
                 <Card type="Projects" accentColor={backgroundColor}>
-                    <h2>Projects</h2>
+                    <h3>Featured Projects</h3>
                     <ul className={classes.list}>
                         <NaviTrack side="right" />
                         <OOTMM side="left" />
