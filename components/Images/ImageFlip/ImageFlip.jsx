@@ -9,15 +9,11 @@ import Image from 'next/image';
  * A visual container for other visual React components.
  * * See https://react-bootstrap.github.io/components/ImageFlips/ for examples and documentation
  * @param {Object} props - Object with all of the properties used within the react component, listed below.
- * @property {String} [title=''] - Title in the header of the ImageFlip
- * @property {Node} children - Contains any element being rendered within the ImageFlip's body
- * @property {String} [size] - Changes the size style to one of our presets 'small', 'medium', 'large', or 'auto' if nothing is passed through
- * @property {Boolean} [selected] - Shows the selected border around the ImageFlip
  * @returns {JSX} A ImageFlip React Component
  */
 
 const ImageFlip = (props) => {
-    const { backPic, frontPic } = props;
+    const { backPic, frontPic, backAlt, frontAlt } = props;
 
     const cardStyle = `${classes.c} `;
     const backStyle = cardStyle;
@@ -32,7 +28,13 @@ const ImageFlip = (props) => {
     return (
         <div className={classes.container} onClick={() => set((flippedState) => !flippedState)}>
             <animated.div className={backStyle} style={{ opacity: opacity.to((o) => 1 - o), transform, rotateY: '-10deg' }}>
-                <Image layout="fill" src={backPic} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" placeholder="blur" />
+                <Image
+                    alt={backAlt}
+                    layout="fill"
+                    src={backPic}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    placeholder="blur"
+                />
             </animated.div>
             <animated.div
                 className={frontStyle}
@@ -43,7 +45,7 @@ const ImageFlip = (props) => {
                     rotateY: '10deg',
                 }}
             >
-                <Image layout="fill" src={frontPic} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                <Image alt={frontAlt} layout="fill" src={frontPic} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </animated.div>
         </div>
     );

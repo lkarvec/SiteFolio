@@ -47,7 +47,12 @@ const BMV = () => {
                     </Col>
                     <Col lg={5}>
                         <div className="flipImage">
-                            <ImageFlip backPic={BMVHome} frontPic={BMVAboutUs} />
+                            <ImageFlip
+                                backPic={BMVHome}
+                                frontPic={BMVAboutUs}
+                                backAlt="Picture of the Be My Village Homepage"
+                                frontAlt="Picture of the Be My Village About page"
+                            />
                         </div>
                     </Col>
                 </Row>

@@ -118,8 +118,18 @@ const FedMall = () => {
                     </Col>
                     <Col lg={5}>
                         <div className="flipImage">
-                            <ImageFlip backPic={FedMallLogIn} frontPic={FedMallOrders} />
-                            <ImageFlip backPic={FedMallPayments} frontPic={FedMallReg} />
+                            <ImageFlip
+                                backPic={FedMallLogIn}
+                                frontPic={FedMallOrders}
+                                backAlt="Picture of the Fedmall login screen"
+                                frontAlt="Picture of the Fedmall Orders section"
+                            />
+                            <ImageFlip
+                                backPic={FedMallPayments}
+                                frontPic={FedMallReg}
+                                backAlt="Picture of the Fedmall Payments section"
+                                frontAlt="Picture of the Fedmall Registration section"
+                            />
                         </div>
                     </Col>
                 </Row>

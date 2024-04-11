@@ -96,8 +96,18 @@ const RADx = () => {
                     </Col>
                     <Col lg={5}>
                         <div className="flipImage">
-                            <ImageFlip backPic={RADxHome} frontPic={RADxHelpfulInfo} />
-                            <ImageFlip backPic={RADxStudyExplorer} frontPic={RADxStudyReg} />
+                            <ImageFlip
+                                backPic={RADxHome}
+                                frontPic={RADxHelpfulInfo}
+                                backAlt="Picture of the RADx Data Hub Homepage"
+                                frontAlt="Picture of the Helpful Information Screen for the RADx Data Hub"
+                            />
+                            <ImageFlip
+                                backPic={RADxStudyExplorer}
+                                frontPic={RADxStudyReg}
+                                backAlt="Picture of the RADx Data Hub Study Explorer"
+                                frontAlt="Picture of the RADx Study Registration form"
+                            />
                         </div>
                     </Col>
                 </Row>

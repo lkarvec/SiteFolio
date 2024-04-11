@@ -77,8 +77,18 @@ const Booksmarts = () => {
                     </Col>
                     <Col lg={5}>
                         <div className="flipImage">
-                            <ImageFlip backPic={bookLanding} frontPic={bookSchedule} />
-                            <ImageFlip backPic={bookFigma} frontPic={bookScreen} />
+                            <ImageFlip
+                                backPic={bookLanding}
+                                frontPic={bookSchedule}
+                                backAlt="Picture of the Booksmarts site landing page"
+                                frontAlt="Picture of the Booksmarts site Schedule section"
+                            />
+                            <ImageFlip
+                                backPic={bookFigma}
+                                frontPic={bookScreen}
+                                backAlt="Picture of the Booksmarts Figma designs"
+                                frontAlt="Picture of the Booksmarts Livestream"
+                            />
                         </div>
                     </Col>
                 </Row>
