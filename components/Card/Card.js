@@ -62,8 +62,6 @@ const Card = (props) => {
                     )}
                 </div>
             </div>
-            {image && <Image className={cardImage} src={image.src} height={image.height} width={image.width} alt={image.alt} />}
-
             {title && <CardComponent.Header className={classes.cardHeader}>{title}</CardComponent.Header>}
             {secondaryTitle && <CardComponent.Title className={classes.cardHeader}>{title}</CardComponent.Title>}
             <CardComponent.Body className={cardBody}>{children}</CardComponent.Body>
