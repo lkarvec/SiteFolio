@@ -2,7 +2,7 @@
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O5O5WSDQK)
 
-This is the first iteration of ([feyprince.dev](https://feyprince.dev/)) built with Next.Js and hosted by Netlify.
+This is the first iteration of ([feyprince.dev](https://feyprince.dev/)) built with Next.Js and hosted by Netlify. This is actively being developed for further optimization and to refine content.
 
 ## 🛠 Installation & Set Up
 
