@@ -45,10 +45,13 @@ const RADx = () => {
                             <a target="_blank" rel="noreferrer" href="https://www.boozallen.com/">
                                 Booz Allen Hamilton
                             </a>{' '}
-                            quickly picked me up to work on their <a target="_blank" rel="noreferrer" href="https://radxdatahub.nih.gov/" />
-                            RADx Data Hub&apos;s 3.0 modernization efforts to lead the frontend team, and I was tasked to quickly set up and
-                            deploy the scaffolding for the new website repository. Being familiar with it&apos;s ease of use in
-                            maintainability, I chose Next.js for the framework and got to work.
+                            quickly picked me up to work on their{' '}
+                            <a target="_blank" rel="noreferrer" href="https://radxdatahub.nih.gov/">
+                                RADx Data Hub
+                            </a>
+                            &apos;s 3.0 modernization efforts to lead the frontend team, and I was tasked to quickly set up and deploy the
+                            scaffolding for the new website repository. Being familiar with it&apos;s ease of use in maintainability, I
+                            chose Next.js for the framework and got to work.
                         </p>{' '}
                         <p>
                             I worked very closely with the Tech Lead{' '}
