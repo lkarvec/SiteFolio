@@ -57,23 +57,26 @@ const Booksmarts = () => {
                             for a majority on the project on design.
                         </p>
                         <h4>Experience</h4>
-                        <li>
-                            Led a team of developers to capture requirements, design, create, and release a website for the streamer
-                            &quot;Booksmarts&quot; which utilized JavaScript, Typescript, and React with Nodejs, Jest, CSS, Bootstrap,
-                            Tailwind
-                        </li>
-                        <li>
-                            Built and maintained the React component library and Storybook, so frontend code redundancy was reduced by 40%.
-                        </li>
-                        <li>
-                            Integrated Facebook, Twitter, Twitch, Google, and Discord account authentication to strengthen the security of
-                            the site.
-                        </li>
-                        <li>
-                            Implemented multiple stream platforms for the users to view, including YouTube, Twitch, Rumble, and Kick
-                            integration.
-                        </li>
-                        <li>Collaborated with design to create wireframes in Figma for the React component library and site pages.</li>
+                        <ul>
+                            <li>
+                                Led a team of developers to capture requirements, design, create, and release a website for the streamer
+                                &quot;Booksmarts&quot; which utilized JavaScript, Typescript, and React with Nodejs, Jest, CSS, Bootstrap,
+                                Tailwind
+                            </li>
+                            <li>
+                                Built and maintained the React component library and Storybook, so frontend code redundancy was reduced by
+                                40%.
+                            </li>
+                            <li>
+                                Integrated Facebook, Twitter, Twitch, Google, and Discord account authentication to strengthen the security
+                                of the site.
+                            </li>
+                            <li>
+                                Implemented multiple stream platforms for the users to view, including YouTube, Twitch, Rumble, and Kick
+                                integration.
+                            </li>
+                            <li>Collaborated with design to create wireframes in Figma for the React component library and site pages.</li>
+                        </ul>
                     </Col>
                     <Col lg={5}>
                         <div className="flipImage">

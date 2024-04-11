@@ -83,38 +83,41 @@ const FedMall = () => {
                             </a>
                         </p>
                         <h4>Experience</h4>
-                        <li>
-                            Modernized the account section of FedMall Commerce for DLA using JavaScript, ReactJS, Redux, Bootstrap, AXIOS,
-                            webpack, NextJS and NodeJS, with Java and Python 3 REST and AWS services, and a GraphQL layer to reduce calls by
-                            ~95% of their previous size.
-                        </li>
-                        <li>
-                            Created the in-house React component library with Storybook to enforce consistency across FedMall modernization
-                            projects and to automate WCAG 2.1 compliance on a Component level.
-                        </li>
-                        <li>Reduced P99 latency for Orders pages from 22 seconds to 1 second with GraphQL data composition.</li>
-                        <li>
-                            Created Bulk Upload APIs with asynchronous Python and Java AWS Lambda services, SQS and S3 on big data uploading
-                            using an Aurora DB schema for data management.
-                        </li>
-                        <li>Directly coordinated with the DLA to demo work successfully at the end of every sprint.</li>
-                        <li>
-                            Traveled to Credence HQ in Chantilly, Virginia upon request from management to assist AWS and API architecture
-                            design for contract proposals in August and presented AWS proposals to DLA directly.
-                        </li>
-                        <li>
-                            Identified issues and risks from the porting of data and environments from Credence to PartNet and coordinated
-                            with the proper team members to solve them in a timely manner to ensure blockers were resolved quickly.
-                        </li>
-                        <li>
-                            Implemented Test-Driven Development practices with Jest and Selenium for test automation, and SonarQube for
-                            deployment code quality and security gates, saving QA several days of manual testing every sprint and creating a
-                            more maintainable product.
-                        </li>
-                        <li>
-                            Led the efforts of 508 Compliance for disabled users by creating new QA policies used by DLA in User Testing and
-                            performing audits for Credence.
-                        </li>
+                        <ul>
+                            <li>
+                                Modernized the account section of FedMall Commerce for DLA using JavaScript, ReactJS, Redux, Bootstrap,
+                                AXIOS, webpack, NextJS and NodeJS, with Java and Python 3 REST and AWS services, and a GraphQL layer to
+                                reduce calls by ~95% of their previous size.
+                            </li>
+                            <li>
+                                Created the in-house React component library with Storybook to enforce consistency across FedMall
+                                modernization projects and to automate WCAG 2.1 compliance on a Component level.
+                            </li>
+                            <li>Reduced P99 latency for Orders pages from 22 seconds to 1 second with GraphQL data composition.</li>
+                            <li>
+                                Created Bulk Upload APIs with asynchronous Python and Java AWS Lambda services, SQS and S3 on big data
+                                uploading using an Aurora DB schema for data management.
+                            </li>
+                            <li>Directly coordinated with the DLA to demo work successfully at the end of every sprint.</li>
+                            <li>
+                                Traveled to Credence HQ in Chantilly, Virginia upon request from management to assist AWS and API
+                                architecture design for contract proposals in August and presented AWS proposals to DLA directly.
+                            </li>
+                            <li>
+                                Identified issues and risks from the porting of data and environments from Credence to PartNet and
+                                coordinated with the proper team members to solve them in a timely manner to ensure blockers were resolved
+                                quickly.
+                            </li>
+                            <li>
+                                Implemented Test-Driven Development practices with Jest and Selenium for test automation, and SonarQube for
+                                deployment code quality and security gates, saving QA several days of manual testing every sprint and
+                                creating a more maintainable product.
+                            </li>
+                            <li>
+                                Led the efforts of 508 Compliance for disabled users by creating new QA policies used by DLA in User Testing
+                                and performing audits for Credence.
+                            </li>
+                        </ul>
                     </Col>
                     <Col lg={5}>
                         <div className="flipImage">

@@ -47,15 +47,18 @@ const LGC = () => {
                         </p>
 
                         <h4>Experience</h4>
-                        <li>
-                            Created a site for the Louisiana Grid Coalition&apos;s open-source High Altitude EMP calculator built with C++
-                            and JavaScript using ReactJS, Nodejs, Jest, CSS, and Canvas deployed in a docker container for nuclear weapons
-                            research and data visualization efforts.
-                        </li>
-                        <li>
-                            Aided the Louisiana Grid Coalition to find economic hosting solutions for their service, utilizing their
-                            non-profit status effectively in communicating for licenses of operation, which are included in the repository.
-                        </li>
+                        <ul>
+                            <li>
+                                Created a site for the Louisiana Grid Coalition&apos;s open-source High Altitude EMP calculator built with
+                                C++ and JavaScript using ReactJS, Nodejs, Jest, CSS, and Canvas deployed in a docker container for nuclear
+                                weapons research and data visualization efforts.
+                            </li>
+                            <li>
+                                Aided the Louisiana Grid Coalition to find economic hosting solutions for their service, utilizing their
+                                non-profit status effectively in communicating for licenses of operation, which are included in the
+                                repository.
+                            </li>
+                        </ul>
                     </Col>
                 </Row>
             </Container>

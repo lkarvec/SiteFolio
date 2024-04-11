@@ -29,15 +29,17 @@ const FTT = () => {
                         </p>
                         <p>Today, I currently use Feytouched Tech as a DBA for any freelance work that comes my way.</p>
                         <h4>Experience</h4>
-                        <li>
-                            Designed and created a Full-Stack Python Retail PoS product with Microsoft Access, SQL Server for relational
-                            database administration with features like Inventory Management, Checkout, Tax Report Management, and a Loyalty
-                            System.
-                        </li>
-                        <li>
-                            Maintained and sold the point-of-service solution to other businesses in the area as a cheaper alternative to
-                            help the business secure $15,000 (DBA Feytouched Tech) in additional funding in its start-up phase.
-                        </li>
+                        <ul>
+                            <li>
+                                Designed and created a Full-Stack Python Retail PoS product with Microsoft Access, SQL Server for relational
+                                database administration with features like Inventory Management, Checkout, Tax Report Management, and a
+                                Loyalty System.
+                            </li>
+                            <li>
+                                Maintained and sold the point-of-service solution to other businesses in the area as a cheaper alternative
+                                to help the business secure $15,000 (DBA Feytouched Tech) in additional funding in its start-up phase.
+                            </li>
+                        </ul>
                     </Col>
                 </Row>
             </Container>

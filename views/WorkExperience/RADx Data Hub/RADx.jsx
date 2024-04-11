@@ -74,28 +74,31 @@ const RADx = () => {
                             ; to commmunicate designs and functionality of the website.
                         </p>
                         <h4>Experience</h4>
-                        <li>
-                            Led the frontend development team on overhauling an NIH website, with JavaScript, ReactJS, Redux, Bootstrap,
-                            AXIOS, webpack, and NextJS; while attending to WCAG 2.0 requirements and other NIH policies.
-                        </li>
-                        <li>Assisted UI Designers by refining Figma and LucidSpark whiteboards for low and mid fidelity wireframes.</li>
-                        <li>
-                            Developed the Study Explorer, Metrics, and Study Registration Pages; as well as the in-house React and Bootstrap
-                            component library with Storybook to enforce design language consistency and stability within the website, as
-                            well as provide automated 508 testing at the component level.
-                        </li>
-                        <li>
-                            Architected solutions for both frontend and backend integrations at both high and low levels, and utilized Test
-                            Driven Development principles to drive development with Jest for Unit Testing.
-                        </li>
-                        <li>
-                            Implemented changes to Standard Operational Procedures for project planning to solve blockers in the Software
-                            Development Life Cycle, initialized coding and documentation standards, and testing and peer review processes.
-                        </li>
-                        <li>
-                            Situated cross-training processes across the front-end team to reduce bottleneck knowledge gaps in the system
-                            design.
-                        </li>
+                        <ul>
+                            <li>
+                                Led the frontend development team on overhauling an NIH website, with JavaScript, ReactJS, Redux, Bootstrap,
+                                AXIOS, webpack, and NextJS; while attending to WCAG 2.0 requirements and other NIH policies.
+                            </li>
+                            <li>Assisted UI Designers by refining Figma and LucidSpark whiteboards for low and mid fidelity wireframes.</li>
+                            <li>
+                                Developed the Study Explorer, Metrics, and Study Registration Pages; as well as the in-house React and
+                                Bootstrap component library with Storybook to enforce design language consistency and stability within the
+                                website, as well as provide automated 508 testing at the component level.
+                            </li>
+                            <li>
+                                Architected solutions for both frontend and backend integrations at both high and low levels, and utilized
+                                Test Driven Development principles to drive development with Jest for Unit Testing.
+                            </li>
+                            <li>
+                                Implemented changes to Standard Operational Procedures for project planning to solve blockers in the
+                                Software Development Life Cycle, initialized coding and documentation standards, and testing and peer review
+                                processes.
+                            </li>
+                            <li>
+                                Situated cross-training processes across the front-end team to reduce bottleneck knowledge gaps in the
+                                system design.
+                            </li>
+                        </ul>
                     </Col>
                     <Col lg={5}>
                         <div className="flipImage">

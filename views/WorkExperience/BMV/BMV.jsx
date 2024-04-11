@@ -31,19 +31,24 @@ const BMV = () => {
                             tooling in order to bridge the gaps for potentially motor or vision impaired users.
                         </p>
                         <h4>Experience</h4>
-                        <li>
-                            Contracted to manage a team of 5 other programmers and released a Teacher Mentoring web application with
-                            JavaScript, React, Jest, and Node.js.
-                        </li>
-                        <li>
-                            Created high and low fidelity wireframes in Figma to pinpoint and refine design painpoints from stakeholders.
-                        </li>
-                        <li>Built a SQL database and data-driven questionnaire to match users to mentors for an effortless experience.</li>
-                        <li>
-                            Conducted User Interface testing and UX research, and adjusted the website based on user and stakeholder
-                            feedback.
-                        </li>
-                        <li>After implementing the new interface and questionnaire, user conversions increased by 400%.</li>
+                        <ul>
+                            <li>
+                                Contracted to manage a team of 5 other programmers and released a Teacher Mentoring web application with
+                                JavaScript, React, Jest, and Node.js.
+                            </li>
+                            <li>
+                                Created high and low fidelity wireframes in Figma to pinpoint and refine design painpoints from
+                                stakeholders.
+                            </li>
+                            <li>
+                                Built a SQL database and data-driven questionnaire to match users to mentors for an effortless experience.
+                            </li>
+                            <li>
+                                Conducted User Interface testing and UX research, and adjusted the website based on user and stakeholder
+                                feedback.
+                            </li>
+                            <li>After implementing the new interface and questionnaire, user conversions increased by 400%.</li>
+                        </ul>
                     </Col>
                     <Col lg={5}>
                         <div className="flipImage">
