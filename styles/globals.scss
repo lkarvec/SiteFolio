@@ -167,3 +167,13 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
+
+.nav-tabs {
+    --bs-nav-tabs-border-width: 0px;
+    --bs-nav-tabs-link-active-bg: rgba(7, 75, 177, 0.185);
+}
+
+.nav-link {
+    border-radius: 0.5rem !important;
+    border: 0px !important;
+}
