@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './SocialButtons.module.scss';
 import { Envelope, Github, Linkedin } from 'react-bootstrap-icons';
+import KofiIcon from '../Images/svgs/Kofi';
 
 /**
  * A visual container for Social Media Buttons.
@@ -19,14 +20,17 @@ const SocialButtons = ({ variant }) => {
     }
     return (
         <div className={containerClass}>
-            <a href="https://github.com/lkarvec">
+            <a href="https://github.com/lkarvec" target="_blank" rel="noreferrer">
                 <Github size={35} title="Go to Github" className={classes.button} />
             </a>
-            <a href="https://www.linkedin.com/in/alexander-mains-956b13208/">
+            <a href="https://www.linkedin.com/in/alexander-mains-956b13208/" target="_blank" rel="noreferrer">
                 <Linkedin size={35} title="Go to LinkedIn" className={classes.button} />
             </a>
-            <a href="mailto:lkarvec@gmail.com">
+            <a href="mailto:lkarvec@gmail.com" target="_blank" rel="noreferrer">
                 <Envelope size={35} title="Send an email to lkarvec@gmail.com" className={classes.button} />
+            </a>
+            <a href="https://ko-fi.com/feytouchedtech" target="_blank" rel="noreferrer" title="Buy me a Ko-fi">
+                <KofiIcon className={classes.button} />
             </a>
         </div>
     );

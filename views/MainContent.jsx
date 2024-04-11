@@ -12,6 +12,10 @@ const About = dynamic(() => import('./About/About'), {
     ssr: false,
 });
 
+const Projects = dynamic(() => import('./Projects/Projects'), {
+    ssr: false,
+});
+
 const MainContent = (props) => {
     const { backgroundColor } = props;
 
@@ -26,6 +30,7 @@ const MainContent = (props) => {
             <Container className={classes.Container}>
                 <About backgroundColor={backgroundColor} />
                 <WorkExpCard backgroundColor={backgroundColor} />
+                <Projects backgroundColor={backgroundColor} />
             </Container>
         </>
     );

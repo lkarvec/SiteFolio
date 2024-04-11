@@ -81,78 +81,78 @@ function App() {
                             factorY={0.3}
                             style={{
                                 position: 'absolute',
-                                marginTop: '40%',
-                                right: '10%',
+                                top: '1000px',
+                                right: '5%',
                                 width: '100%',
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud2.png" className={classes.cloud2} />
+                            <img alt="Image of a Floating Cloud" src="/cloud2.png" className={classes.cloud2} />
                         </MouseParallaxChild>
                         <MouseParallaxChild
                             factorX={0.2}
                             factorY={0.6}
                             style={{
                                 position: 'absolute',
-                                marginTop: '27%',
+                                top: '500px',
                                 right: '15%',
                                 width: '100%',
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud3.png" className={classes.cloud3} />
+                            <img alt="Image of a Floating Cloud" src="/cloud3.png" className={classes.cloud3} />
                         </MouseParallaxChild>
                         <MouseParallaxChild
                             factorX={0.1}
                             factorY={0.4}
                             style={{
                                 position: 'absolute',
-                                marginTop: '50%',
+                                top: '900px',
                                 left: '70%',
                                 width: '100%',
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud4.png" className={classes.cloud4} />
+                            <img alt="Image of a Floating Cloud" src="/cloud4.png" className={classes.cloud4} />
                         </MouseParallaxChild>
                         <MouseParallaxChild
                             factorX={0.15}
                             factorY={0.6}
                             style={{
                                 position: 'absolute',
-                                marginTop: '18%',
+                                top: '350px',
                                 left: '70%',
                                 width: '100%',
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud7.png" className={classes.cloud3} />
+                            <img alt="Image of a Floating Cloud" src="/cloud7.png" className={classes.cloud3} />
                         </MouseParallaxChild>
                         <MouseParallaxChild
                             factorX={0.3}
                             factorY={0.9}
                             style={{
                                 position: 'absolute',
-                                marginTop: '40%',
+                                top: '700px',
                                 left: '55%',
                                 width: '100%',
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud1.png" className={classes.cloud7} />
+                            <img alt="Image of a Floating Cloud" src="/cloud1.png" className={classes.cloud7} />
                         </MouseParallaxChild>
                         <MouseParallaxChild
                             factorX={0.7}
                             factorY={1.4}
                             style={{
                                 position: 'absolute',
-                                marginTop: '45%',
+                                top: '750px',
                                 left: '10%',
                                 width: '100%',
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud5.png" className={classes.cloud5} />
+                            <img alt="Image of a Floating Cloud" src="/cloud5.png" className={classes.cloud5} />
                         </MouseParallaxChild>
                         <MouseParallaxChild
                             factorX={0.5}
@@ -160,12 +160,12 @@ function App() {
                             style={{
                                 position: 'absolute',
                                 marginTop: '10%',
-                                right: '35%',
+                                right: '85%',
                                 width: '100%',
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud6.png" className={classes.cloud6} />
+                            <img alt="Image of a Floating Cloud" src="/cloud6.png" className={classes.cloud6} />
                         </MouseParallaxChild>
 
                         <MouseParallaxChild
@@ -179,7 +179,7 @@ function App() {
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud8.png" className={classes.cloud8} />
+                            <img alt="Image of a Floating Cloud" src="/cloud8.png" className={classes.cloud8} />
                         </MouseParallaxChild>
                     </MouseParallaxContainer>
                 </div>

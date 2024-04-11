@@ -40,6 +40,7 @@ h5 {
 a {
     color: $link;
     text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 a:hover {
@@ -165,4 +166,14 @@ a:hover {
     vertical-align: middle;
     align-items: center;
     justify-content: center;
+}
+
+.nav-tabs {
+    --bs-nav-tabs-border-width: 0px;
+    --bs-nav-tabs-link-active-bg: rgba(7, 75, 177, 0.185);
+}
+
+.nav-link {
+    border-radius: 0.5rem !important;
+    border: 0px !important;
 }

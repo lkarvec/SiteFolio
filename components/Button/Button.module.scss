@@ -10,7 +10,7 @@
 .large {
     height: 50px;
     width: 250px;
-    font: normal normal normal 18px/22px Arial;
+    font: normal normal bold 18px/22px Arial;
 }
 
 .medium {
@@ -33,7 +33,7 @@
 .primary,
 .primary:focus,
 .secondary:hover {
-    background: $PrimaryBackground 0 0 no-repeat padding-box;
+    background: #65a8ff9c;
     border-color: $PrimaryBackground;
     border-width: 1px;
     color: $PrimaryColor;
@@ -43,9 +43,9 @@
 .secondary:focus,
 .primary:hover {
     background: $SecondaryBackground 0 0 no-repeat padding-box;
-    border-color: $SecondaryOutlineColor;
+    border-color: black;
     border-width: 1px;
-    color: $SecondaryColor;
+    color: black;
 }
 
 .danger,
