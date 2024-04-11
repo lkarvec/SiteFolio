@@ -93,7 +93,7 @@ function App() {
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud2.png" className={classes.cloud2} />
+                            <img alt="Image of a Floating Cloud" src="/cloud2.png" className={classes.cloud2} />
                         </MouseParallaxChild>
                         <MouseParallaxChild
                             factorX={0.2}
@@ -106,7 +106,7 @@ function App() {
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud3.png" className={classes.cloud3} />
+                            <img alt="Image of a Floating Cloud" src="/cloud3.png" className={classes.cloud3} />
                         </MouseParallaxChild>
                         <MouseParallaxChild
                             factorX={0.1}
@@ -119,7 +119,7 @@ function App() {
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud4.png" className={classes.cloud4} />
+                            <img alt="Image of a Floating Cloud" src="/cloud4.png" className={classes.cloud4} />
                         </MouseParallaxChild>
                         <MouseParallaxChild
                             factorX={0.15}
@@ -132,7 +132,7 @@ function App() {
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud7.png" className={classes.cloud3} />
+                            <img alt="Image of a Floating Cloud" src="/cloud7.png" className={classes.cloud3} />
                         </MouseParallaxChild>
                         <MouseParallaxChild
                             factorX={0.3}
@@ -145,7 +145,7 @@ function App() {
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud1.png" className={classes.cloud7} />
+                            <img alt="Image of a Floating Cloud" src="/cloud1.png" className={classes.cloud7} />
                         </MouseParallaxChild>
                         <MouseParallaxChild
                             factorX={0.7}
@@ -158,7 +158,7 @@ function App() {
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud5.png" className={classes.cloud5} />
+                            <img alt="Image of a Floating Cloud" src="/cloud5.png" className={classes.cloud5} />
                         </MouseParallaxChild>
                         <MouseParallaxChild
                             factorX={0.5}
@@ -171,7 +171,7 @@ function App() {
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud6.png" className={classes.cloud6} />
+                            <img alt="Image of a Floating Cloud" src="/cloud6.png" className={classes.cloud6} />
                         </MouseParallaxChild>
 
                         <MouseParallaxChild
@@ -185,7 +185,7 @@ function App() {
                                 height: 'auto',
                             }}
                         >
-                            <img src="/cloud8.png" className={classes.cloud8} />
+                            <img alt="Image of a Floating Cloud" src="/cloud8.png" className={classes.cloud8} />
                         </MouseParallaxChild>
                     </MouseParallaxContainer>
                 </div>
