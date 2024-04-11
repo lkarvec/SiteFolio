@@ -10,16 +10,17 @@ const NavigationBar = (props) => {
     for (const tab of tabList) {
         if (tab === activeTab) {
             items.push(
-                <Nav.Item>
-                    <Nav.Link eventKey={tab}>
-                        <span style={{ color: '' }}> {tab}</span>
+                <Nav.Item key={tab}>
+                    <Nav.Link key={tab} eventKey={tab}>
+                        <span> {tab}</span>
                     </Nav.Link>
                 </Nav.Item>
             );
         } else {
             items.push(
-                <Nav.Item>
+                <Nav.Item key={tab}>
                     <Nav.Link
+                        key={tab}
                         onClick={() => {
                             setTab(tab);
                         }}
@@ -33,7 +34,7 @@ const NavigationBar = (props) => {
     }
 
     return (
-        <Nav variant="tabs" defaultActiveKey="/home" onSelect={handleSelect}>
+        <Nav variant="tabs" defaultActiveKey="NIH" onSelect={handleSelect}>
             {items}
         </Nav>
     );
