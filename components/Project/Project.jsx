@@ -55,9 +55,11 @@ const Project = (props) => {
                     <ul className={classes.grid}>{techStackArray}</ul>
                     <ul className={classes.grid}>{iconArray}</ul>
                 </div>
-                <div className={classes.imageContainer}>
-                    <Image src={imageLink} layout="fill" />
-                </div>
+                {imageLink && (
+                    <div className={classes.imageContainer}>
+                        <Image src={imageLink} layout="fill" />
+                    </div>
+                )}
             </div>
         </>
     );
