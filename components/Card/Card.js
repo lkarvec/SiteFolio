@@ -57,7 +57,7 @@ const Card = (props) => {
             <div className={classes.moveRight}>
                 <div className={classes.accent}>
                     {(type !== 'Hero' && <CardAccent color={accentColor} />) || (
-                        <Image src="/LogoAlpha.png" width="75px" height="73px" style={{ opacity: 0.7 }} />
+                        <Image alt="Logo for Feytouched Tech" src="/LogoAlpha.png" width="75px" height="73px" style={{ opacity: 0.7 }} />
                     )}
                 </div>
             </div>
