@@ -27,7 +27,10 @@ const Hero = () => {
                             <p style={{ maxWidth: '1100px' }}>
                                 I am currently on the market for new roles, as my current contract is finishing at the end of March 2024.
                             </p>
-                            <p>Feel free to send me an email or a message on LinkedIn about new opportunities for React Web Development.</p>
+                            <p>
+                                Feel free to send me an email or a message on LinkedIn about new opportunities for React Web Development. If
+                                you want to start a website commission, head over to my Ko-fi to start the process.
+                            </p>
                         </Row>
                         <Row>
                             <div className={classes.centered}>

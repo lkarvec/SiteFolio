@@ -10,6 +10,15 @@
     align-items: center;
     gap: 15px;
     padding: 7px;
+    a {
+        color: black;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+    }
+    a:hover,
+    a:focus {
+        color: #00000090;
+    }
 }
 
 .container:hover {
