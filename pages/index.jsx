@@ -61,6 +61,11 @@ function App() {
     return (
         <>
             <title>Feytouched Tech</title>
+            <meta
+                name="description"
+                content="A recognized leader in website Software Engineering; delivering website overhauls and modernization
+                                projects with expertise in the React ecosystem, including Typescript, NextJS, AWS, and more."
+            />
             <div className={classes.outerWrapper}>
                 <div className={`${classes.cloudPosition} fadeClouds`}>
                     <MouseParallaxContainer
