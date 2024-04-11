@@ -4,6 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    p {
+        font: normal normal bold clamp(12px, 4vw, 20px) Arial;
+    }
 }
 
 .centered {
