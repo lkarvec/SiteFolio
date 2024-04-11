@@ -17,7 +17,7 @@ const Hero = () => {
                             <h1>Welcome to Feytouched Tech</h1>
                         </Row>
                         <Row className="mb-3">
-                            <h2>My name is Alexander Mains</h2>
+                            <h2>My name is Alexander Mains.</h2>
                         </Row>
                         <Row>
                             <h4>
