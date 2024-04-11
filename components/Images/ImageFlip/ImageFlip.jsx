@@ -54,8 +54,8 @@ const ImageFlip = (props) => {
 ImageFlip.defaultProps = {};
 
 ImageFlip.propTypes = {
-    backPic: PropTypes.string,
-    frontPic: PropTypes.string,
+    backPic: PropTypes.object,
+    frontPic: PropTypes.object,
     selected: PropTypes.bool,
     size: PropTypes.oneOf(['small', 'medium', 'large']),
 };
