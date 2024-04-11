@@ -8,7 +8,7 @@
     border-radius: 5px;
     align-items: center;
     overflow: hidden;
-    //backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     .moveRight {
         position: absolute;
         bottom: 0;
@@ -60,6 +60,7 @@
 .Hero {
     background: #789abe40;
     padding: clamp(5px, 1vw, 20px);
+    backdrop-filter: blur(4px);
 }
 
 .About {

@@ -22,7 +22,7 @@ const NaviTrack = ({ backgroundColor, side }) => {
                         link: 'https://www.figma.com/file/p7gzg9UawsXvBEn95D22w1/NaviTrack?type=design&node-id=0%3A1&mode=design&t=BX1MASADx1QuZXOw-1',
                     },
                 ]}
-                imageLink="/BMVAboutUs.png"
+                imageLink=""
             >
                 A sleek, modern solution to Ocarina of Time and Majora&apos;s Mask speedrunning and randomizer documentation and tools for
                 streamers. This website will supply item trackers, glitch documentation, and serve as a general purpose application for
