@@ -36,9 +36,13 @@ const About = ({ backgroundColor }) => {
                                     more readable scripting languages like Python and Javascript for their maintainability and ease of use.
                                 </p>
                                 <p>
-                                    Eventually I transferred to University of Texas at San Antonio and graduated in 2021. All through this
-                                    time, I worked on whole websites from the ground up, including Livestreamer Websites, Teacher Mentoring
-                                    services, and even assisted USAF modernization projects with High Altitude EMP Calculation.
+                                    Eventually I transferred to{' '}
+                                    <a href="https://utsa.edu/" target="_blank" rel="noreferrer">
+                                        University of Texas at San Antonio
+                                    </a>{' '}
+                                    and graduated in 2021. All through this time, I worked on whole websites from the ground up, including
+                                    Livestreamer Websites, Teacher Mentoring services, and even assisted USAF modernization projects with
+                                    High Altitude EMP Calculation.
                                 </p>
                                 <p>
                                     Recently I&apos;ve been in the space of federal contracting with companies like Booz Allen Hamilton, and
