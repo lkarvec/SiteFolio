@@ -17,7 +17,7 @@ const Booksmarts = () => {
         <>
             <Container className={classes.Container}>
                 <Row className="mt-4 mb-3">
-                    <Col lg={{ span: 5 }}>
+                    <Col lg={{ span: 4 }}>
                         <h2>Booksmarts LLC</h2>
                         <h3>Senior Software Developer</h3>
                         <h4>September 2020 - August 2022</h4>
