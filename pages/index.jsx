@@ -60,6 +60,7 @@ function App() {
 
     return (
         <>
+            <title>Feytouched Tech</title>
             <div className={classes.outerWrapper}>
                 <div className={`${classes.cloudPosition} fadeClouds`}>
                     <MouseParallaxContainer
