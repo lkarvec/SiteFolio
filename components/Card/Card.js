@@ -54,7 +54,6 @@ const Card = (props) => {
 
     return (
         <CardComponent className={cardClass}>
-            <CardComponent.Img variant="top" src="" />
             <div className={classes.moveRight}>
                 <div className={classes.accent}>
                     {(type !== 'Hero' && <CardAccent color={accentColor} />) || (
