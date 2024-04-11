@@ -31,7 +31,7 @@ const Booksmarts = () => {
                             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/tikonelson/">
                                 Tiko Nelson
                             </a>{' '}
-                            for a majority on the project on design
+                            for a majority on the project on design.
                         </p>
                         <h4>Experience</h4>
                         <li>
