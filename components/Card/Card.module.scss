@@ -3,7 +3,7 @@
 
 .card {
     box-shadow: -3px 4px 6px #00000020;
-    background-color: #ffffffb0;
+    background-color: #ffffff91;
     border: 1px solid $borderColor;
     border-radius: 5px;
     align-items: center;
@@ -64,10 +64,11 @@
 }
 
 .About {
+    background: #8edac744;
     padding: clamp(20px, 5vw, 40px);
 }
 
 .Projects {
-    background: #789abe70;
+    background: #8a63d45b;
     padding: clamp(20px, 1vw, 40px);
 }
