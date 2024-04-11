@@ -11,7 +11,7 @@ const { sr, srConfig } = scrollReveal;
  * @returns
  */
 const Project = (props) => {
-    const { techStack, children, title, icons, imageLink, side } = props;
+    const { techStack, children, title, icons, imageLink, side, imageAlt } = props;
 
     /**
      * Creates an array of strings detailing the tech stack.
@@ -57,7 +57,7 @@ const Project = (props) => {
                 </div>
                 {imageLink && (
                     <div className={classes.imageContainer}>
-                        <Image src={imageLink} layout="fill" />
+                        <Image src={imageLink} layout="fill" alt={imageAlt} />
                     </div>
                 )}
             </div>

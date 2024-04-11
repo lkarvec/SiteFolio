@@ -33,6 +33,7 @@ const OOTMM = ({ backgroundColor, side }) => {
                     },
                 ]}
                 imageLink="/OOTMM.png"
+                imageAlt="Picture of the Ocarina of Time and Majora's Mask Combo Randomizer"
             >
                 A randomizer mod that combines both Ocarina of Time and Majora&apos;s Mask into a single game. I&apos;m currently working on
                 making the site responsive and redesigning certain sections to be more accessible to beginners.
