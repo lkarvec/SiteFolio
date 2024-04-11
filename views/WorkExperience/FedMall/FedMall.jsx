@@ -1,9 +1,12 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import ImageFlip from '../../../components/Images/ImageFlip/ImageFlip';
-import links from '../../../constants/imageUrls.module.scss';
 import classes from './FedMall.module.scss';
 import Card from '../../../components/Card/Card';
+import FedMallLogIn from '../../../public/FedMallLogIn.png';
+import FedMallOrders from '../../../public/FedMallOrders.png';
+import FedMallPayments from '../../../public/FedMallPayments.png';
+import FedMallReg from '../../../public/FedMallReg.png';
 
 /*
  */
@@ -115,8 +118,8 @@ const FedMall = () => {
                     </Col>
                     <Col lg={5}>
                         <div className="flipImage">
-                            <ImageFlip backPic={links.Fed1} frontPic={links.Fed2} />
-                            <ImageFlip backPic={links.Fed3} frontPic={links.Fed4} />
+                            <ImageFlip backPic={FedMallLogIn} frontPic={FedMallOrders} />
+                            <ImageFlip backPic={FedMallPayments} frontPic={FedMallReg} />
                         </div>
                     </Col>
                 </Row>

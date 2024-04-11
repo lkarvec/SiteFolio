@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classes from './ImageFlip.module.scss';
 import { useSpring, animated } from '@react-spring/web';
+import Image from 'next/image';
+
 // TODO rewrite the jsdocs
 /**
  * A visual container for other visual React components.
@@ -18,8 +20,8 @@ const ImageFlip = (props) => {
     const { backPic, frontPic } = props;
 
     const cardStyle = `${classes.c} `;
-    const backStyle = cardStyle + backPic;
-    const frontStyle = cardStyle + frontPic;
+    const backStyle = cardStyle;
+    const frontStyle = cardStyle;
 
     const [flipped, set] = useState(false);
     const { transform, opacity } = useSpring({
@@ -29,7 +31,9 @@ const ImageFlip = (props) => {
     });
     return (
         <div className={classes.container} onClick={() => set((flippedState) => !flippedState)}>
-            <animated.div className={backStyle} style={{ opacity: opacity.to((o) => 1 - o), transform, rotateY: '-10deg' }} />
+            <animated.div className={backStyle} style={{ opacity: opacity.to((o) => 1 - o), transform, rotateY: '-10deg' }}>
+                <Image layout="fill" src={backPic} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" placeholder="blur" />
+            </animated.div>
             <animated.div
                 className={frontStyle}
                 style={{
@@ -38,7 +42,9 @@ const ImageFlip = (props) => {
                     rotateX: '180deg',
                     rotateY: '10deg',
                 }}
-            />
+            >
+                <Image layout="fill" src={frontPic} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </animated.div>
         </div>
     );
 };

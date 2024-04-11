@@ -3,6 +3,7 @@ import { Col, Row } from 'react-bootstrap';
 import classes from './About.module.scss';
 import Card from '../../components/Card/Card';
 import scrollReveal from '../../lib/sr';
+import Image from 'next/image';
 
 const { sr, srConfig } = scrollReveal;
 /*
@@ -67,7 +68,13 @@ const About = ({ backgroundColor }) => {
                             </Col>
                             <Col lg={4} className={classes.centeredImage}>
                                 <div className={classes.imageBackdrop}>
-                                    <img src="/headshotpfp.png" height="280px" width="310px" className="bounceGeneral" />
+                                    <Image
+                                        alt="Headshot picture of Alexander Mains"
+                                        src="/headshotpfp.png"
+                                        height={280}
+                                        width={310}
+                                        className="bounceGeneral"
+                                    />
                                 </div>
                             </Col>
                         </Row>

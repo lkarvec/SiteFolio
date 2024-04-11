@@ -1,8 +1,9 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import ImageFlip from '../../../components/Images/ImageFlip/ImageFlip';
-import links from '../../../constants/imageUrls.module.scss';
 import classes from './BMV.module.scss';
+import BMVHome from '../../../public/BMVHome.png';
+import BMVAboutUs from '../../../public/BMVAboutUs.png';
 
 /*
  */
@@ -46,7 +47,7 @@ const BMV = () => {
                     </Col>
                     <Col lg={5}>
                         <div className="flipImage">
-                            <ImageFlip backPic={links.BMV1} frontPic={links.BMV2} />
+                            <ImageFlip backPic={BMVHome} frontPic={BMVAboutUs} />
                         </div>
                     </Col>
                 </Row>

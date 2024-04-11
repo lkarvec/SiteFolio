@@ -1,8 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import classes from './TAP.module.scss';
-import links from '../../../constants/imageUrls.module.scss';
-import ImageFlip from '../../../components/Images/ImageFlip/ImageFlip';
 
 /*
  */
@@ -41,7 +39,7 @@ const TAP = () => {
                     </Col>
                     {/*<Col lg={5}>
                         <div className="flipImage">
-                            <ImageFlip backPic={links.Tap1} frontPic={links.Tap2} />
+                            <ImageFlip backPic='Tap1} frontPic='Tap2} />
     </div>
     </Col>*/}
                 </Row>

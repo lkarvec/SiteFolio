@@ -1,9 +1,12 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import ImageFlip from '../../../components/Images/ImageFlip/ImageFlip';
-import links from '../../../constants/imageUrls.module.scss';
 import classes from './Booksmarts.module.scss';
 import Card from '../../../components/Card/Card';
+import bookLanding from '../../../public/BookLanding.png';
+import bookFigma from '../../../public/bookFigma.png';
+import bookScreen from '../../../public/BookScreen.png';
+import bookSchedule from '../../../public/BookSchedule.png';
 
 /**
  * React Component detailing all of my experience working on Book's site
@@ -74,8 +77,8 @@ const Booksmarts = () => {
                     </Col>
                     <Col lg={5}>
                         <div className="flipImage">
-                            <ImageFlip backPic={links.book1} frontPic={links.book2} />
-                            <ImageFlip backPic={links.bookFigma} frontPic={links.bookScreen} />
+                            <ImageFlip backPic={bookLanding} frontPic={bookSchedule} />
+                            <ImageFlip backPic={bookFigma} frontPic={bookScreen} />
                         </div>
                     </Col>
                 </Row>
