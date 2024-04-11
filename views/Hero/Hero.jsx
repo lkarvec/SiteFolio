@@ -3,6 +3,7 @@ import { Row } from 'react-bootstrap';
 import classes from './Hero.module.scss';
 import Card from '../../components/Card/Card';
 import SocialButtons from '../../components/SocialButtons/SocialButtons';
+import Button from '../../components/Button/Button';
 
 /*
  */
@@ -35,6 +36,9 @@ const Hero = () => {
                         <Row>
                             <div className={classes.centered}>
                                 <SocialButtons variant="footer" />
+                                <a href="/AlexanderMainsResume.pdf" download>
+                                    <Button size="large" variant="secondary" label="Download My Resume" />
+                                </a>
                             </div>
                         </Row>
                     </div>
