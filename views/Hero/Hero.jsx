@@ -26,7 +26,8 @@ const Hero = () => {
                                 projects with expertise in the React ecosystem, including Typescript, NextJS, AWS, and more.
                             </p>
                             <p style={{ maxWidth: '1100px' }}>
-                                I am currently on the market for new roles, as my current contract is finishing at the end of March 2024.
+                                I am currently on the market for new roles, as my last contract with Booz Allen Hamilton finished at the end
+                                of March 2024.
                             </p>
                             <p>
                                 Feel free to send me an email or a message on LinkedIn about new opportunities for React Web Development. If
