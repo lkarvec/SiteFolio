@@ -36,7 +36,7 @@ const About = ({ backgroundColor }) => {
                                     more readable scripting languages like Python and Javascript for their maintainability and ease of use.
                                 </p>
                                 <p>
-                                    Eventually I transferred to{' '}
+                                    Eventually, I transferred to{' '}
                                     <a href="https://utsa.edu/" target="_blank" rel="noreferrer">
                                         University of Texas at San Antonio
                                     </a>{' '}
@@ -45,10 +45,10 @@ const About = ({ backgroundColor }) => {
                                     High Altitude EMP Calculation.
                                 </p>
                                 <p>
-                                    Recently I&apos;ve been in the space of federal contracting with companies like Booz Allen Hamilton, and
-                                    have worked on DLA&apos;s large scale e-commerce sites and some of NIH&apos;s research repository sites.
-                                    My biggest obsession on these sites was ensuring they maintained accessiblility for all users, not just
-                                    abled bodied ones; while still holding a clean design the clients appreciated.
+                                    Recently, I&apos;ve been in the space of federal contracting with companies like Booz Allen Hamilton,
+                                    and have worked on DLA&apos;s large scale e-commerce sites and some of NIH&apos;s research repository
+                                    sites. My biggest obsession on these sites was ensuring they maintained accessiblility for all users,
+                                    not just abled bodied ones; while still holding a clean design the clients appreciated.
                                 </p>
                                 <p>Here&apos;s some of the tech I&apos;ve used in the last 9 years of experience:</p>
 
