@@ -8,7 +8,7 @@ import KofiIcon from '../Images/svgs/Kofi';
  * @returns {JSX} A Social Media Button Card React Component
  */
 
-const SocialButtons = ({ variant }) => {
+const SocialButtons = ({ variant }: { variant: string }) => {
     let containerClass = classes.container;
     switch (variant) {
         case 'footer':
