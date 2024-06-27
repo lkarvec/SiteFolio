@@ -3,7 +3,7 @@ import React from 'react';
 /**
  * @returns Figma Icon
  */
-const FigmaIcon = () => {
+const FigmaIcon = (props) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 200 300" width="20" height="30">
             <path id="path0_fill" fill="currentColor" d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z" />
